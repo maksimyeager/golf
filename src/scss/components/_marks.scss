@@ -1,0 +1,16 @@
+.mark {
+    background-color: #12ae655e;
+    border-radius: 38px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.13;
+    padding: 8px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.marks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
