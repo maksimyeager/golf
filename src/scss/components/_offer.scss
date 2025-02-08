@@ -1,6 +1,10 @@
 .offer-page {
     padding: 60px 0;
 
+    .address {
+        color: #12ae65;
+    }
+
     &__wrapper {
         &-top {
             display: grid;
@@ -32,6 +36,7 @@
     .price {
         font-size: 30px;
         font-weight: 600;
+        color: #0f814c;
 
         &__info {
             text-align: end;
@@ -41,7 +46,7 @@
             font-size: 14px;
             font-weight: 400;
             letter-spacing: 0.02em;
-            color: #626262;
+            color: #12ae65;
         }
     }
 
@@ -75,7 +80,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                font-family: "Poppins", sans-serif;
+                width: 100%;
                 font-size: 28px;
                 font-weight: 600;
                 line-height: 1.13;

@@ -5,9 +5,9 @@ import image1 from "../assets/image-1.jpeg";
 
 const Tour = () => {
     return (
-        <>
+        <div>
             <Banner title={"Tour"} imageUrl={bannerImg}/>
-            <section className=" section section--offers">
+            <section className="section">
                 <div className="container">
                     <div className="offers__wrapper">
                         <div className="offers__block">
@@ -19,7 +19,7 @@ const Tour = () => {
                                     <div className="offers__title">
                                         Special Offer 1
                                     </div>
-                                    <div className="offers__address">
+                                    <div className="address">
                                         <PiMapPinFill size={18} />
                                         City, Address
                                     </div>
@@ -36,7 +36,7 @@ const Tour = () => {
                                     <div className="offers__title">
                                         Special Offer 1
                                     </div>
-                                    <div className="offers__address">
+                                    <div className="address">
                                         <PiMapPinFill size={18} />
                                         City, Address
                                     </div>
@@ -53,7 +53,7 @@ const Tour = () => {
                                     <div className="offers__title">
                                         Special Offer 1
                                     </div>
-                                    <div className="offers__address">
+                                    <div className="address">
                                         <PiMapPinFill size={18} />
                                         City, Address
                                     </div>
@@ -70,7 +70,7 @@ const Tour = () => {
                                     <div className="offers__title">
                                         Special Offer 1
                                     </div>
-                                    <div className="offers__address">
+                                    <div className="address">
                                         <PiMapPinFill size={18} />
                                         City, Address
                                     </div>
@@ -87,7 +87,7 @@ const Tour = () => {
                                     <div className="offers__title">
                                         Special Offer 1
                                     </div>
-                                    <div className="offers__address">
+                                    <div className="address">
                                         <PiMapPinFill size={18} />
                                         City, Address
                                     </div>
@@ -104,7 +104,7 @@ const Tour = () => {
                                     <div className="offers__title">
                                         Special Offer 1
                                     </div>
-                                    <div className="offers__address">
+                                    <div className="address">
                                         <PiMapPinFill size={18} />
                                         City, Address
                                     </div>
@@ -115,7 +115,7 @@ const Tour = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     );
 };
 

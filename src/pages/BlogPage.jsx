@@ -1,6 +1,24 @@
 import { FaCalendar } from "react-icons/fa";
+import { IoIosShareAlt } from "react-icons/io";
 
 const BlogPage = () => {
+    const handleShare = async () => {
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: "Поделись этим!",
+                    text: "Смотри, что я нашел!",
+                    url: window.location.href,
+                });
+                console.log("Успешно поделились!");
+            } catch (error) {
+                console.log("Ошибка при попытке поделиться:", error);
+            }
+        } else {
+            alert("Ваш браузер не поддерживает функцию поделиться.");
+        }
+    };
+    
     return (
         <div className="blog-page">
             <div className="container">
@@ -9,9 +27,14 @@ const BlogPage = () => {
                     <div className="blog__page__info">
                         <div className="blog-page__info-top">
                             <h2>Blog 1</h2>
-                            <p className="data">
-                                <FaCalendar /> <span>Thur 17 Nov 2022</span>
-                            </p>
+                            <div className="blog-page__settings">
+                                <p className="data">
+                                    <FaCalendar /> <span>Thur 17 Nov 2022</span>
+                                </p>
+                                <button onClick={handleShare} className="share-button">
+                                    <IoIosShareAlt color="#fff"/>
+                                </button>
+                            </div>
                         </div>
                         <div className="blog-page__info-bottom">
                             <p>

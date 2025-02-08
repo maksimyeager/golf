@@ -8,7 +8,7 @@ const Offers = () => {
     return (
         <>
             <Banner title={"Offers"} imageUrl={bannerImg} />
-            <section className=" section section--offers">
+            <section className="section">
                 <div className="container">
                     <div className="offers__wrapper">
                         <div className="offers__block">
