@@ -48,13 +48,24 @@
 
             .home {
                 &__title {
-                    font-size: 72px;
+                    font-size: 64px;
                     font-weight: 600;
                     line-height: 1.13;
                     color: #fff;
-                    max-width: 500px;
+                    max-width: 990px;
                     width: 100%;
-                    margin-bottom: 30px;
+                    margin-bottom: 15px;
+                }
+
+                &__desc {
+                    font-family: Poppins;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 1.5;
+                    color: #ffffff;
+                    margin-bottom: 15px;
+                    width: 100%;
+                    max-width: 700px;
                 }
 
                 &__subtitle {

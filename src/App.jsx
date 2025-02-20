@@ -9,7 +9,6 @@ import OurPros from "./pages/OurPros";
 import Blog from "./pages/Blog";
 import BlogPage from "./pages/BlogPage";
 import GroupTours from "./pages/GroupTours";
-import Tournaments from "./pages/Tournaments";
 import Destination from "./pages/Destination";
 import Tour from "./pages/Tour";
 import CustomizeTours from "./pages/CustomizeTours";
@@ -42,7 +41,6 @@ const App = () => {
                         path={"/customize-tours"}
                         element={<CustomizeTours />}
                     />
-                    <Route path={"/tournaments"} element={<Tournaments />} />
                 </Route>
             </Routes>
         </>

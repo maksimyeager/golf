@@ -1,38 +1,30 @@
 export const destinations = [
     {
-        name: "USA",
-        path: "usa",
+        name: "Azərbaycan",
+        path: "azerbaijan",
     },
     {
-        name: "China",
-        path: "china",
+        name: "Georgia",
+        path: "georgia",
     },
     {
-        name: "Morocco",
-        path: "morocco",
+        name: "Russia",
+        path: "russia",
     },
     {
-        name: "Thailand",
-        path: "thailand",
+        name: "Kazakhstan",
+        path: "Kazakhstan",
     },
     {
-        name: "Bali",
-        path: "bali",
+        name: "UAE",
+        path: "uae",
     },
     {
-        name: "Malaysia",
-        path: "malaysia",
+        name: "Qatar",
+        path: "qatar",
     },
     {
-        name: "France",
-        path: "france",
-    },
-    {
-        name: "Canada",
-        path: "canada",
-    },
-    {
-        name: "Vietnam",
-        path: "vietnam",
+        name: "Turkey",
+        path: "turkey",
     },
 ];

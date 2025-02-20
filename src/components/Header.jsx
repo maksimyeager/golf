@@ -226,39 +226,7 @@ const Header = () => {
                                 </div>
                             )}
                         </li>
-                        <li
-                            onMouseEnter={() => setOpen2(true)}
-                            onMouseLeave={() => setOpen2(false)}
-                        >
-                            <Link to={"/tournaments"} className="toggle-link">
-                                Tournaments <FaChevronDown size={14} />
-                            </Link>
-                            {open2 && (
-                                <div className="dropdown dropdown--3">
-                                    <div className="dropdown__wrapper">
-                                        <div className="dropdown__block">
-                                            <ul className="dropdown__list">
-                                                <li>
-                                                    <Link to={"/tournaments"}>
-                                                        Amateur Cup
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to={"/tournaments"}>
-                                                        Amateur Cup 2
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to={"/tournaments"}>
-                                                        Amateur Cup 3
-                                                    </Link>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-                        </li>
+                       
                         <li>
                             <Link to={"/offers"}>Offers</Link>
                         </li>

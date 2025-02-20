@@ -6,8 +6,6 @@ const BlogPage = () => {
         if (navigator.share) {
             try {
                 await navigator.share({
-                    title: "Поделись этим!",
-                    text: "Смотри, что я нашел!",
                     url: window.location.href,
                 });
                 console.log("Успешно поделились!");
@@ -18,7 +16,7 @@ const BlogPage = () => {
             alert("Ваш браузер не поддерживает функцию поделиться.");
         }
     };
-    
+
     return (
         <div className="blog-page">
             <div className="container">
@@ -31,8 +29,11 @@ const BlogPage = () => {
                                 <p className="data">
                                     <FaCalendar /> <span>Thur 17 Nov 2022</span>
                                 </p>
-                                <button onClick={handleShare} className="share-button">
-                                    <IoIosShareAlt color="#fff"/>
+                                <button
+                                    onClick={handleShare}
+                                    className="share-button"
+                                >
+                                    <IoIosShareAlt color="#fff" />
                                 </button>
                             </div>
                         </div>

@@ -19,13 +19,26 @@ const Home = () => {
                     <div className="container">
                         <p className="home__subtitle">welcome to golf verve</p>
                         <h1 className="home__title">
-                            Experience The Magic Of Golf!
+                            Welcome to the Ultimate Haven for Golf Enthusiasts!
                         </h1>
+                        <p className="home__desc">
+                            We are seasoned tourism professionals with a deep
+                            passion for curating exceptional golf getaways. Our
+                            expertise lies in designing bespoke and distinctive
+                            golf tours to emerging and captivating destinations.
+                            By integrating unique cultural and tourism
+                            experiences into our golf packages, we enhance each
+                            journey, creating a more enriching and memorable
+                            travel experience for our clients.
+                        </p>
+                        <p className="home__desc">
+                            Proposed golf destinations are meticulously
+                            selected, with golf courses personally inspected and
+                            evaluated to ensure the highest quality golfing
+                            experiences.
+                        </p>
                         <div className="home__settings">
                             <Link to={"/"}>Book A Tour</Link>
-                            <button>
-                                <FaPlay color="#12AE65" size={18} />
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -82,55 +95,61 @@ const Home = () => {
                     </div>
                     <div className="offers__wrapper">
                         <div className="offers__block">
-                            <div className="offers__img">
-                                <img src={image1} alt="" />
-                            </div>
-                            <div className="offers__info">
-                                <div className="offers__data">
-                                    <div className="offers__title">
-                                        Special Offer 1
-                                    </div>
-                                    <div className="address">
-                                        <HiMapPin size={18} />
-                                        City, Address
-                                    </div>
+                            <Link to={"/offer"}>
+                                <div className="offers__img">
+                                    <img src={image1} alt="" />
                                 </div>
-                                <div className="offers__price">£1849</div>
-                            </div>
+                                <div className="offers__info">
+                                    <div className="offers__data">
+                                        <div className="offers__title">
+                                            Special Offer 1
+                                        </div>
+                                        <div className="address">
+                                            <HiMapPin size={18} />
+                                            City, Address
+                                        </div>
+                                    </div>
+                                    <div className="offers__price">£1849</div>
+                                </div>
+                            </Link>
                         </div>
                         <div className="offers__block">
-                            <div className="offers__img">
-                                <img src={image1} alt="" />
-                            </div>
-                            <div className="offers__info">
-                                <div className="offers__data">
-                                    <div className="offers__title">
-                                        Special Offer 1
-                                    </div>
-                                    <div className="address">
-                                        <HiMapPin size={18} />
-                                        City, Address
-                                    </div>
+                            <Link to={"/offer"}>
+                                <div className="offers__img">
+                                    <img src={image1} alt="" />
                                 </div>
-                                <div className="offers__price">£1849</div>
-                            </div>
+                                <div className="offers__info">
+                                    <div className="offers__data">
+                                        <div className="offers__title">
+                                            Special Offer 1
+                                        </div>
+                                        <div className="address">
+                                            <HiMapPin size={18} />
+                                            City, Address
+                                        </div>
+                                    </div>
+                                    <div className="offers__price">£1849</div>
+                                </div>
+                            </Link>
                         </div>
                         <div className="offers__block">
-                            <div className="offers__img">
-                                <img src={image1} alt="" />
-                            </div>
-                            <div className="offers__info">
-                                <div className="offers__data">
-                                    <div className="offers__title">
-                                        Special Offer 1
-                                    </div>
-                                    <div className="address">
-                                        <HiMapPin size={18} />
-                                        City, Address
-                                    </div>
+                            <Link to={"/offer"}>
+                                <div className="offers__img">
+                                    <img src={image1} alt="" />
                                 </div>
-                                <div className="offers__price">£1849</div>
-                            </div>
+                                <div className="offers__info">
+                                    <div className="offers__data">
+                                        <div className="offers__title">
+                                            Special Offer 1
+                                        </div>
+                                        <div className="address">
+                                            <HiMapPin size={18} />
+                                            City, Address
+                                        </div>
+                                    </div>
+                                    <div className="offers__price">£1849</div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -149,7 +168,7 @@ const Home = () => {
                                     <div className="destinations__img--overlay"></div>
                                 </div>
                                 <div className="destinations__title">
-                                    Morocco
+                                    Azərbaycan
                                 </div>
                                 <Link to={"/"} className="destinations__link">
                                     View Destination
@@ -163,7 +182,7 @@ const Home = () => {
                                     <div className="destinations__img--overlay"></div>
                                 </div>
                                 <div className="destinations__title">
-                                    Morocco
+                                    Georgia
                                 </div>
                                 <Link to={"/"} className="destinations__link">
                                     View Destination
@@ -177,7 +196,7 @@ const Home = () => {
                                     <div className="destinations__img--overlay"></div>
                                 </div>
                                 <div className="destinations__title">
-                                    Morocco
+                                    Russia
                                 </div>
                                 <Link to={"/"} className="destinations__link">
                                     View Destination
