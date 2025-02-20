@@ -4,7 +4,7 @@ import { FaChevronDown } from "react-icons/fa";
 
 const LanguageSelector = () => {
     const { i18n } = useTranslation("global");
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(open);
 
     const changeLanguage = (lng) => {
         document.documentElement.lang = lng;
@@ -17,11 +17,11 @@ const LanguageSelector = () => {
         setIsOpen(true);
     };
     const closeDropdown = () => {
-        setIsOpen(false );
+        setIsOpen(false);
     };
 
     // Список доступных языков
-    const languages = ["az", "ru", "en"];
+    const languages = ["ru", "en"];
 
     // Исключаем текущий язык из списка
     const availableLanguages = languages.filter(
@@ -29,7 +29,11 @@ const LanguageSelector = () => {
     );
 
     return (
-        <div className="language-selector" onMouseEnter={openDropdown} onMouseLeave={closeDropdown}>
+        <div
+            className="language-selector"
+            onMouseEnter={openDropdown}
+            onMouseLeave={closeDropdown}
+        >
             <div className="language-toggle">
                 {i18n.language.toLocaleUpperCase()} <FaChevronDown />
             </div>

@@ -5,6 +5,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__block {
@@ -12,9 +16,9 @@
 
     &__image {
         background-color: #e5e5e6;
-        height: 200px;
         border-radius: 40px;
         overflow: hidden;
+        aspect-ratio: 3/2;
 
         img {
             width: 100%;

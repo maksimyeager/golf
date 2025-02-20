@@ -59,7 +59,9 @@ const Footer = () => {
                                 <Link to={"/tour"}>Golf Tours</Link>
                             </li>
                             <li className="footer__list-item">
-                                <Link to={"/customize-tours"}>Customize Tours</Link>
+                                <Link to={"/customize-tours"}>
+                                    Customize Tours
+                                </Link>
                             </li>
                             <li className="footer__list-item">
                                 <Link to={"/group-tours"}>Group Tours</Link>
@@ -69,13 +71,21 @@ const Footer = () => {
                     <div className="footer__menu">
                         <h2 className="footer__menu-title">Top Destinations</h2>
                         <ul className="footer__list">
-                            <li className="footer__list-item">The Belfry</li>
-                            <li className="footer__list-item">Celtic Manor</li>
-                            <li className="footer__list-item">Druids Glen</li>
                             <li className="footer__list-item">
-                                Turnberry Resort
+                                <Link to={"/destination/azerbaijan"}>Azərbaycan</Link>
                             </li>
-                            <li className="footer__list-item">Gleneagles</li>
+                            <li className="footer__list-item">
+                                <Link to={"/destination/georgia"}>Georgia</Link>
+                            </li>
+                            <li className="footer__list-item">
+                                <Link to={"/destination/russia"}>Russia</Link>
+                            </li>
+                            <li className="footer__list-item">
+                                <Link to={"/destination/kazakhstan"}>Kazakhstan</Link>
+                            </li>
+                            <li className="footer__list-item">
+                                <Link to={"/destination/uae"}>UAE</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

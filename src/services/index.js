@@ -13,7 +13,7 @@ export const destinations = [
     },
     {
         name: "Kazakhstan",
-        path: "Kazakhstan",
+        path: "kazakhstan",
     },
     {
         name: "UAE",

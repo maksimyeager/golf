@@ -11,11 +11,19 @@
             grid-template-columns: 1fr 1fr;
             gap: 15px;
             margin-bottom: 30px;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
         }
         &-bottom {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
         }
         margin-bottom: 60px;
     }
@@ -23,7 +31,11 @@
     &__info {
         display: flex;
         justify-content: space-between;
-        gap: 60px;
+        gap: 30px;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
     }
 
     &__title {
@@ -97,6 +109,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px 60px;
+
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
 
         h2 {
             font-size: 24px;

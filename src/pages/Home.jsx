@@ -3,13 +3,17 @@ import earthSvg from "../assets/icons/earth.svg";
 import travelSvg from "../assets/icons/travel.svg";
 import serviceSvg from "../assets/icons/service.svg";
 import image from "../assets/image.png";
-import image1 from "../assets/image-1.jpeg";
 import image2 from "../assets/image-2.jpeg";
 import { HiMapPin } from "react-icons/hi2";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import { FaPlay } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
+import offer1 from "../assets/offer-1.jpeg";
+import offer2 from "../assets/offer-2.jpeg";
+import offer3 from "../assets/offer-3.jpeg";
+import destination1 from "../assets/destination-1.jpg";
+import destination2 from "../assets/destination-2.jpg";
+import destination3 from "../assets/destination-3.jpg";
 
 const Home = () => {
     return (
@@ -97,7 +101,7 @@ const Home = () => {
                         <div className="offers__block">
                             <Link to={"/offer"}>
                                 <div className="offers__img">
-                                    <img src={image1} alt="" />
+                                    <img src={offer1} alt="" />
                                 </div>
                                 <div className="offers__info">
                                     <div className="offers__data">
@@ -116,7 +120,7 @@ const Home = () => {
                         <div className="offers__block">
                             <Link to={"/offer"}>
                                 <div className="offers__img">
-                                    <img src={image1} alt="" />
+                                    <img src={offer2} alt="" />
                                 </div>
                                 <div className="offers__info">
                                     <div className="offers__data">
@@ -135,7 +139,7 @@ const Home = () => {
                         <div className="offers__block">
                             <Link to={"/offer"}>
                                 <div className="offers__img">
-                                    <img src={image1} alt="" />
+                                    <img src={offer3} alt="" />
                                 </div>
                                 <div className="offers__info">
                                     <div className="offers__data">
@@ -161,44 +165,53 @@ const Home = () => {
                         Lorem ipsum dolor sit amet
                     </p>
                     <div className="destinations__wrapper">
-                        <Link>
+                        <Link to={"/destination/azerbaijan"}>
                             <div className="destinations__block">
                                 <div className="destinations__img">
-                                    <img src={image2} alt="" />
+                                    <img src={destination1} alt="" />
                                     <div className="destinations__img--overlay"></div>
                                 </div>
                                 <div className="destinations__title">
                                     Azərbaycan
                                 </div>
-                                <Link to={"/"} className="destinations__link">
+                                <Link
+                                    to={"/destination/azerbaijan"}
+                                    className="destinations__link"
+                                >
                                     View Destination
                                 </Link>
                             </div>
                         </Link>
-                        <Link>
+                        <Link to={"/destination/georgia"}>
                             <div className="destinations__block">
                                 <div className="destinations__img">
-                                    <img src={image2} alt="" />
+                                    <img src={destination2} alt="" />
                                     <div className="destinations__img--overlay"></div>
                                 </div>
                                 <div className="destinations__title">
                                     Georgia
                                 </div>
-                                <Link to={"/"} className="destinations__link">
+                                <Link
+                                    to={"/destination/georgia"}
+                                    className="destinations__link"
+                                >
                                     View Destination
                                 </Link>
                             </div>
                         </Link>
-                        <Link>
+                        <Link to={"/destination/russia"}>
                             <div className="destinations__block">
                                 <div className="destinations__img">
-                                    <img src={image2} alt="" />
+                                    <img src={destination3} alt="" />
                                     <div className="destinations__img--overlay"></div>
                                 </div>
                                 <div className="destinations__title">
                                     Russia
                                 </div>
-                                <Link to={"/"} className="destinations__link">
+                                <Link
+                                    to={"/destination/russia"}
+                                    className="destinations__link"
+                                >
                                     View Destination
                                 </Link>
                             </div>

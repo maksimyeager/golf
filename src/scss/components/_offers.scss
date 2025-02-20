@@ -4,11 +4,31 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 30px;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+
+        .section__subtitle {
+            text-align: start;
+
+            @media (max-width: 576px) {
+                margin-bottom: 10px;
+            }
+        }
     }
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__block {
+        max-width: 320px;
+        margin: 0 auto;
     }
 
     &__info {
@@ -38,5 +58,8 @@
     &__img {
         border-radius: 40px;
         overflow: hidden;
+        img {
+            aspect-ratio: 3 / 2;
+        }
     }
 }

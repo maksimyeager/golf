@@ -5,6 +5,7 @@ const Banner = ({ title, imageUrl }) => {
             style={{
                 padding: "120px 0",
                 borderRadius: "82px",
+                margin: "0 15px",
                 backgroundImage: `linear-gradient(
             90deg,
             rgba(3, 31, 2, 0.7) 0%,
