@@ -257,7 +257,7 @@
 
             &__block {
                 position: relative;
-                max-width: 320px;
+                max-width: 350px;
                 margin: 0 auto;
             }
 
@@ -321,7 +321,8 @@
                 height: 50px;
                 gap: 15px;
                 button {
-                    display: flex;
+                    // display: flex;
+                    display: none;
                     justify-content: center;
                     align-items: center;
                     background-color: #000;
@@ -340,7 +341,6 @@
                     color: #fff;
                     font-weight: 500;
                     width: 207px;
-                    height: 41px;
                     padding: 8px 18px;
                     border-radius: 72px;
                     transition: all 0.3s ease;

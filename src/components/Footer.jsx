@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { FiFacebook } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -26,7 +26,7 @@ const Footer = () => {
                                 <FiInstagram size={24} />
                             </div>
                             <div className="footer__social-block footer__social-block--x">
-                                <FaXTwitter size={22} />
+                                <FaLinkedinIn size={22} />
                             </div>
                         </div>
                     </div>

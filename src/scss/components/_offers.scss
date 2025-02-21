@@ -27,7 +27,7 @@
     }
 
     &__block {
-        max-width: 320px;
+        max-width: 350px;
         margin: 0 auto;
     }
 
@@ -36,6 +36,12 @@
         align-items: center;
         justify-content: space-between;
         padding: 15px 30px 0px;
+        gap: 15px;
+
+        @media (max-width: 990px) {
+            flex-direction: column;
+            gap: 5px;
+        }
 
         .address {
             color: #12ae65;
@@ -60,6 +66,22 @@
         overflow: hidden;
         img {
             aspect-ratio: 3 / 2;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 60px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 2%;
+            color: #626262;
         }
     }
 }
