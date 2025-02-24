@@ -4,16 +4,26 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 30px;
+        gap: 30px;
 
         @media (max-width: 576px) {
             flex-direction: column;
         }
 
+        .section__title {
+            text-align: left;
+
+            @media (max-width: 576px) {
+                text-align: center;
+            }
+        }
+
         .section__subtitle {
-            text-align: start;
+            text-align: left;
 
             @media (max-width: 576px) {
                 margin-bottom: 10px;
+                text-align: center;
             }
         }
     }

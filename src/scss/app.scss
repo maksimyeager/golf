@@ -41,6 +41,10 @@ body.no-scroll {
 }
 
 .banner {
+    @media (max-width: 768px) {
+        border-radius: 41px !important;
+    }
+
     .title-1 {
         color: #fff;
         text-align: center;

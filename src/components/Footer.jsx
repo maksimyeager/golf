@@ -14,9 +14,8 @@ const Footer = () => {
                             <img src={logo} alt="" />
                         </div>
                         <div className="footer__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim.
+                            A leading golf travel agency specializing in unique
+                            and emerging golf destinations around the world
                         </div>
                         <div className="footer__socials">
                             <div className="footer__social-block footer__social-block--facebook">
@@ -72,7 +71,9 @@ const Footer = () => {
                         <h2 className="footer__menu-title">Top Destinations</h2>
                         <ul className="footer__list">
                             <li className="footer__list-item">
-                                <Link to={"/destination/azerbaijan"}>Azərbaycan</Link>
+                                <Link to={"/destination/azerbaijan"}>
+                                    Azərbaycan
+                                </Link>
                             </li>
                             <li className="footer__list-item">
                                 <Link to={"/destination/georgia"}>Georgia</Link>
@@ -81,7 +82,9 @@ const Footer = () => {
                                 <Link to={"/destination/russia"}>Russia</Link>
                             </li>
                             <li className="footer__list-item">
-                                <Link to={"/destination/kazakhstan"}>Kazakhstan</Link>
+                                <Link to={"/destination/kazakhstan"}>
+                                    Kazakhstan
+                                </Link>
                             </li>
                             <li className="footer__list-item">
                                 <Link to={"/destination/uae"}>UAE</Link>

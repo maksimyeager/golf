@@ -20,6 +20,7 @@ const Home = () => {
         <>
             <div className="main-banner">
                 <div className="home-banner">
+                    <div className="home-banner--overlay"></div>
                     <div className="container">
                         <p className="home__subtitle">welcome to golf verve</p>
                         <h1 className="home__title">
@@ -52,10 +53,15 @@ const Home = () => {
                     <div className="subscribe__wrapper">
                         <div className="subscribe__info">
                             <h2 className="subscribe__title">Subscribe</h2>
-                            <p className="subscribe__subtitle">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing <br /> elit, sed do eiusmod tempor
-                                incididunt ut.
+                            <p
+                                className="subscribe__subtitle"
+                                style={{ maxWidth: "430px" }}
+                            >
+                                Stay on Par with Exclusive Golf Travel Deals!
+                                <br />
+                                Subscribe to our newsletter and get notified
+                                about exclusive golf vacation packages and
+                                special promotions.
                             </p>
                             <form action="" className="subscribe__form">
                                 <input
@@ -70,6 +76,9 @@ const Home = () => {
                             <div className="subscribe__contacts-info">
                                 <div className="subscribe__number">
                                     050 545 56 85
+                                </div>
+                                <div className="subscribe__email">
+                                    info@golf-verve.com
                                 </div>
                                 <div className="subscribe__contacts-desc">
                                     Contact us
@@ -86,9 +95,16 @@ const Home = () => {
                 <div className="container">
                     <div className="offers__head">
                         <div className="offers__head-col">
-                            <h2 className="section__title">Special Offers</h2>
-                            <p className="section__subtitle">
-                                Lorem ipsum dolor sit amet
+                            <h2 className="section__title">
+                                Exclusive Golf Deals
+                            </h2>
+                            <p
+                                className="section__subtitle"
+                                style={{ maxWidth: "530px" }}
+                            >
+                                Unlock exclusive golf getaways and limited-time
+                                deals designed for passionate golfers—experience
+                                world-class courses at unbeatable rates
                             </p>
                         </div>
                         <div className="offers__head-col">
@@ -160,9 +176,16 @@ const Home = () => {
             </section>
             <section className="section section--destinations">
                 <div className="container">
-                    <h2 className="section__title">Top Destinations</h2>
-                    <p className="section__subtitle">
-                        Lorem ipsum dolor sit amet
+                    <h2 className="section__title">
+                        Ultimate Golf Destinations
+                    </h2>
+                    <p
+                        className="section__subtitle"
+                        style={{ maxWidth: "580px" }}
+                    >
+                        Explore the latest and most exciting golf destinations,
+                        where newly discovered courses and fresh golf
+                        experiences await passionate players.
                     </p>
                     <div className="destinations__wrapper">
                         <Link to={"/destination/azerbaijan"}>

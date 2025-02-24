@@ -34,6 +34,9 @@ const GroupTours = () => {
                                 <div className="group-tours__number">
                                     050 545 56 85
                                 </div>
+                                <div className="group-tours__email">
+                                    info@golf-verve.com
+                                </div>
                                 <div className="group-tours__contacts-desc">
                                     Contact us
                                 </div>

@@ -14,7 +14,7 @@ const Header = () => {
     const [openDeopdown1, setOpenDeopdown1] = useState(false);
     const handleClose = () => {
         setOpen(false);
-        document.body.classList.add("no-scroll")
+        document.body.classList.add("no-scroll");
     };
     return (
         <>
@@ -52,100 +52,60 @@ const Header = () => {
                                         />
                                         <div className="dropdown__wrapper">
                                             <div className="dropdown__block">
-                                                <div className="dropdown__block-title">
-                                                    Europe
-                                                </div>
                                                 <ul className="dropdown__list">
                                                     <li>
-                                                        <Link to={"/tour"}>
-                                                            Cyprus
+                                                        <Link
+                                                            to={
+                                                                "/destination/azerbaijan"
+                                                            }
+                                                        >
+                                                            Azerbaijan
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link>
-                                                            Czech Republic
+                                                        <Link
+                                                            to={
+                                                                "/destination/georgia"
+                                                            }
+                                                        >
+                                                            Georgia
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link>France</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>Greece</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>Italy</Link>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className="dropdown__block">
-                                                <div className="dropdown__block-title">
-                                                    North & South America
-                                                </div>
-                                                <ul className="dropdown__list">
-                                                    <li>
-                                                        <Link>Cyprus</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>
-                                                            Czech Republic
+                                                        <Link
+                                                            to={
+                                                                "/destination/russia"
+                                                            }
+                                                        >
+                                                            Russia
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link>France</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>Greece</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>Italy</Link>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className="dropdown__block">
-                                                <div className="dropdown__block-title">
-                                                    Europe
-                                                </div>
-                                                <ul className="dropdown__list">
-                                                    <li>
-                                                        <Link>Cyprus</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>
-                                                            Czech Republic
+                                                        <Link
+                                                            to={
+                                                                "/destination/kazakhstan"
+                                                            }
+                                                        >
+                                                            Kazakhstan
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link>France</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>Greece</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>Italy</Link>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className="dropdown__block">
-                                                <div className="dropdown__block-title">
-                                                    Europe
-                                                </div>
-                                                <ul className="dropdown__list">
-                                                    <li>
-                                                        <Link>Cyprus</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>
-                                                            Czech Republic
+                                                        <Link
+                                                            to={
+                                                                "/destination/uae"
+                                                            }
+                                                        >
+                                                            UAE
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link>France</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>Greece</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link>Italy</Link>
+                                                        <Link
+                                                            to={
+                                                                "/destination/qatar"
+                                                            }
+                                                        >
+                                                            Qatar
+                                                        </Link>
                                                     </li>
                                                 </ul>
                                             </div>

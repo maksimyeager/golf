@@ -20,29 +20,19 @@
         overflow: hidden;
         z-index: 10;
 
-        // &::before {
-        //     content: "";
-        //     position: absolute;
-        //     z-index: 10;
-        //     bottom: 0;
-        //     right: 0;
-        //     width: 300px;
-        //     background-color: #ebeeeb;
-        //     height: 190px;
-        //     border-radius: 67px 0 0 0;
-        // }
+        &--overlay {
+            position: absolute;
+            background: linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.61) 0%,
+                rgba(50, 50, 50, 0.5307) 47.87%,
+                rgba(102, 102, 102, 0) 89.33%
+            );
+        }
 
-        // &::after {
-        //     content: "";
-        //     position: absolute;
-        //     z-index: 10;
-        //     bottom: 0;
-        //     right: 0;
-        //     width: 460px;
-        //     background-color: #ebeeeb;
-        //     height: 100px;
-        //     border-radius: 67px 0 0 0;
-        // }
+        @media (max-width: 768px) {
+            border-radius: 41px;
+        }
 
         .container {
             width: 100%;
@@ -136,7 +126,7 @@
         letter-spacing: 0.02em;
         text-align: center;
         color: #626262;
-        margin-bottom: 60px;
+        margin: 0 auto 60px;
 
         @media (max-width: 768px) {
             margin-bottom: 30px;
@@ -154,9 +144,6 @@
                 @media (max-width: 768px) {
                     flex-direction: column;
                 }
-            }
-
-            &__info {
             }
 
             &__title {
@@ -189,6 +176,11 @@
                     font-size: 15px;
                     padding: 8px 15px;
                     border-radius: 72px;
+                    transition: all 0.3s ease;
+
+                    &:focus{
+                        border-color: #f58634;
+                    }
 
                     &::placeholder {
                         font-size: 15px;
@@ -224,21 +216,25 @@
                 display: flex;
                 align-items: center;
                 gap: 15px;
+                text-align: end;
+
+                @media (max-width: 768px) {
+                    text-align: start;
+                }
 
                 &-desc {
                     font-size: 18px;
                     font-weight: 600;
                     color: #7f7f7f;
-                    text-align: end;
-
-                    @media (max-width: 768px) {
-                        text-align: start;
-                    }
                 }
             }
             &__number {
                 font-size: 28px;
                 font-weight: 600;
+            }
+            &__email {
+                font-size: 18px;
+                font-weight: 500;
             }
         }
     }
@@ -269,6 +265,10 @@
                 font-size: 32px;
                 font-weight: 600;
                 color: #fff;
+
+                @media (max-width: 768px) {
+                    font-size: 24px;
+                }
             }
 
             &__link {
@@ -475,7 +475,7 @@
                 padding: 0 30px;
                 margin-bottom: 15px;
 
-                @media (max-width: 300px) {
+                @media (max-width: 375px) {
                     flex-direction: column;
                     text-align: center;
                 }

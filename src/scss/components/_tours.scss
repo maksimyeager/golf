@@ -70,21 +70,25 @@
         display: flex;
         align-items: center;
         gap: 15px;
+        text-align: end;
+        @media (max-width: 900px) {
+            text-align: start;
+        }
 
         &-desc {
             font-size: 18px;
             font-weight: 600;
             color: #7f7f7f;
-            text-align: end;
 
-            @media (max-width: 900px) {
-                text-align: start;
-            }
         }
     }
     &__number {
         font-size: 28px;
         font-weight: 600;
+    }
+    &__email {
+        font-size: 18px;
+        font-weight: 500;
     }
 }
 
@@ -164,7 +168,11 @@
 
         textarea {
             resize: none;
-            height: 100px;
+            height: 120px;
+
+            @media (max-width: 768px) {
+                border-radius: 25px;
+            }
         }
 
         button {
