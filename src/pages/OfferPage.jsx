@@ -1,5 +1,7 @@
 import { PiMapPinFill } from "react-icons/pi";
-import image1 from "../assets/image-1.jpeg";
+import offer1 from "../assets/offers/offer-1.jpeg";
+import offer2 from "../assets/offers/offer-2.jpeg";
+import offer3 from "../assets/offers/offer-3.jpeg";
 
 const OfferPage = () => {
     return (
@@ -8,22 +10,22 @@ const OfferPage = () => {
                 <div className="offer-page__wrapper">
                     <div className="offer-page__wrapper-top">
                         <div className="offer-page__img">
-                            <img src={image1} alt="" />
+                            <img src={offer1} alt="" />
                         </div>
                         <div className="offer-page__images">
                             <div className="offer-page__images-block">
-                                <img src={image1} alt="" />
+                                <img src={offer2} alt="" />
                             </div>
                             <div className="offer-page__images-block">
-                                <img src={image1} alt="" />
+                                <img src={offer1} alt="" />
                             </div>
                             <div className="offer-page__images-block">
-                                <img src={image1} alt="" />
+                                <img src={offer3} alt="" />
                             </div>
                             <div className="offer-page__images-block">
                                 <p>+10 images</p>
                                 <div className="offer-page__images-block--overlay"></div>
-                                <img src={image1} alt="" />
+                                <img src={offer2} alt="" />
                             </div>
                         </div>
                     </div>

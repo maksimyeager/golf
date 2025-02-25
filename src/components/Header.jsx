@@ -52,61 +52,81 @@ const Header = () => {
                                         />
                                         <div className="dropdown__wrapper">
                                             <div className="dropdown__block">
+                                                <div className="dropdown__block-title">
+                                                    Destinations
+                                                </div>
                                                 <ul className="dropdown__list">
-                                                    <li>
-                                                        <Link
-                                                            to={
-                                                                "/destination/azerbaijan"
-                                                            }
-                                                        >
-                                                            Azerbaijan
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link
-                                                            to={
-                                                                "/destination/georgia"
-                                                            }
-                                                        >
-                                                            Georgia
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link
-                                                            to={
-                                                                "/destination/russia"
-                                                            }
-                                                        >
-                                                            Russia
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link
-                                                            to={
-                                                                "/destination/kazakhstan"
-                                                            }
-                                                        >
-                                                            Kazakhstan
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link
-                                                            to={
-                                                                "/destination/uae"
-                                                            }
-                                                        >
-                                                            UAE
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link
-                                                            to={
-                                                                "/destination/qatar"
-                                                            }
-                                                        >
-                                                            Qatar
-                                                        </Link>
-                                                    </li>
+                                                    <Link
+                                                        to={
+                                                            "/destination/azerbaijan"
+                                                        }
+                                                        className="customize"
+                                                    >
+                                                        <FaChevronRight color="#12AE65" />
+                                                        <span>Azerbaijan</span>
+                                                    </Link>
+
+                                                    <Link
+                                                        to={
+                                                            "/destination/georgia"
+                                                        }
+                                                        className="customize"
+                                                    >
+                                                        <FaChevronRight color="#12AE65" />
+                                                        <span>Georgia</span>
+                                                    </Link>
+
+                                                    <Link
+                                                        to={
+                                                            "/destination/russia"
+                                                        }
+                                                        className="customize"
+                                                    >
+                                                        <FaChevronRight color="#12AE65" />
+                                                        <span>Russia</span>
+                                                    </Link>
+
+                                                    <Link
+                                                        to={
+                                                            "/destination/kazakhstan"
+                                                        }
+                                                        className="customize"
+                                                    >
+                                                        <FaChevronRight color="#12AE65" />
+                                                        <span>Kazakhstan</span>
+                                                    </Link>
+                                                </ul>
+                                            </div>
+                                            <div className="dropdown__block">
+                                                <div className="dropdown__block-title"></div>
+                                                <ul className="dropdown__list dropdown__list--untitled">
+                                                    <Link
+                                                        to={"/destination/uae"}
+                                                        className="customize"
+                                                    >
+                                                        <FaChevronRight color="#12AE65" />
+                                                        <span>UAE</span>
+                                                    </Link>
+
+                                                    <Link
+                                                        to={
+                                                            "/destination/qatar"
+                                                        }
+                                                        className="customize"
+                                                    >
+                                                        <FaChevronRight color="#12AE65" />
+                                                        <span>Qatar</span>
+                                                    </Link>
+
+                                                    <Link
+                                                        to={
+                                                            "/destination/turkey"
+                                                        }
+                                                        className="customize"
+                                                    >
+                                                        <FaChevronRight color="#12AE65" />
+                                                        <span>Turkey</span>
+                                                    </Link>
                                                 </ul>
                                             </div>
                                         </div>

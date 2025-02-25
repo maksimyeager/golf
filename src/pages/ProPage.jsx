@@ -1,4 +1,4 @@
-import aa from "../assets/aa.jpeg";
+import pro from "../assets/pro.jpeg";
 import { FaCalendar } from "react-icons/fa";
 import { PiMapPinFill } from "react-icons/pi";
 
@@ -8,7 +8,7 @@ const ProPage = () => {
             <div className="container">
                 <div className="pro-page__wrapper">
                     <div className="pro-page__image">
-                        <img src={aa} alt="" />
+                        <img src={pro} alt="" />
                     </div>
                     <div className="pro-page__info">
                         <h2 className="pro-page__title">

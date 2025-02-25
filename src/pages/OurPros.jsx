@@ -1,6 +1,6 @@
 import Banner from "../components/Banner";
 import bannerImg from "../assets/banner/our-pros.jpeg";
-import aa from "../assets/aa.jpeg";
+import pro from "../assets/pro.jpeg";
 import { Link } from "react-router-dom";
 
 const OurPros = () => {
@@ -12,7 +12,7 @@ const OurPros = () => {
                     <div className="our-pros__block">
                         <Link to={"/pro"}>
                             <div className="our-pros__image">
-                                <img src={aa} alt="" />
+                                <img src={pro} alt="" />
                             </div>
                             <div className="our-pros__info">
                                 <div className="our-pros__info-top">
@@ -40,7 +40,7 @@ const OurPros = () => {
                     <div className="our-pros__block">
                         <Link to={"/pro"}>
                             <div className="our-pros__image">
-                                <img src={aa} alt="" />
+                                <img src={pro} alt="" />
                             </div>
                             <div className="our-pros__info">
                                 <div className="our-pros__info-top">
@@ -68,7 +68,7 @@ const OurPros = () => {
                     <div className="our-pros__block">
                         <Link to={"/pro"}>
                             <div className="our-pros__image">
-                                <img src={aa} alt="" />
+                                <img src={pro} alt="" />
                             </div>
                             <div className="our-pros__info">
                                 <div className="our-pros__info-top">

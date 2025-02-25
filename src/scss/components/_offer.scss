@@ -91,6 +91,11 @@
             border-radius: 29px;
             overflow: hidden;
 
+            img{
+                object-fit: cover;
+                height: 100%;
+            }
+
             &--overlay {
                 position: absolute;
                 top: 0;

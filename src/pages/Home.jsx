@@ -2,51 +2,24 @@ import { Link } from "react-router-dom";
 import earthSvg from "../assets/icons/earth.svg";
 import travelSvg from "../assets/icons/travel.svg";
 import serviceSvg from "../assets/icons/service.svg";
-import image from "../assets/image.png";
-import image2 from "../assets/image-2.jpeg";
+import ourPro from "../assets/our-pro.png";
 import { HiMapPin } from "react-icons/hi2";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import offer1 from "../assets/offer-1.jpeg";
-import offer2 from "../assets/offer-2.jpeg";
-import offer3 from "../assets/offer-3.jpeg";
-import destination1 from "../assets/destination-1.jpg";
-import destination2 from "../assets/destination-2.jpg";
-import destination3 from "../assets/destination-3.jpg";
+import offer1 from "../assets/offers/offer-1.jpeg";
+import offer2 from "../assets/offers/offer-2.jpeg";
+import offer3 from "../assets/offers/offer-3.jpeg";
+import destination1 from "../assets/destinations/destination-1.jpg";
+import destination2 from "../assets/destinations/destination-2.jpg";
+import destination3 from "../assets/destinations/destination-3.jpg";
+import HomeBanner from "../components/HomeBanner";
 
 const Home = () => {
     return (
         <>
             <div className="main-banner">
-                <div className="home-banner">
-                    <div className="home-banner--overlay"></div>
-                    <div className="container">
-                        <p className="home__subtitle">welcome to golf verve</p>
-                        <h1 className="home__title">
-                            Welcome to the Ultimate Haven for Golf Enthusiasts!
-                        </h1>
-                        <p className="home__desc">
-                            We are seasoned tourism professionals with a deep
-                            passion for curating exceptional golf getaways. Our
-                            expertise lies in designing bespoke and distinctive
-                            golf tours to emerging and captivating destinations.
-                            By integrating unique cultural and tourism
-                            experiences into our golf packages, we enhance each
-                            journey, creating a more enriching and memorable
-                            travel experience for our clients.
-                        </p>
-                        <p className="home__desc">
-                            Proposed golf destinations are meticulously
-                            selected, with golf courses personally inspected and
-                            evaluated to ensure the highest quality golfing
-                            experiences.
-                        </p>
-                        <div className="home__settings">
-                            <Link to={"/"}>Book A Tour</Link>
-                        </div>
-                    </div>
-                </div>
+                <HomeBanner/>
             </div>
             <section className="section section--subscribe">
                 <div className="container">
@@ -141,14 +114,14 @@ const Home = () => {
                                 <div className="offers__info">
                                     <div className="offers__data">
                                         <div className="offers__title">
-                                            Special Offer 1
+                                            Special Offer 2
                                         </div>
                                         <div className="address">
                                             <HiMapPin size={18} />
                                             City, Address
                                         </div>
                                     </div>
-                                    <div className="offers__price">£1849</div>
+                                    <div className="offers__price">£1910</div>
                                 </div>
                             </Link>
                         </div>
@@ -160,14 +133,14 @@ const Home = () => {
                                 <div className="offers__info">
                                     <div className="offers__data">
                                         <div className="offers__title">
-                                            Special Offer 1
+                                            Special Offer 3
                                         </div>
                                         <div className="address">
                                             <HiMapPin size={18} />
                                             City, Address
                                         </div>
                                     </div>
-                                    <div className="offers__price">£1849</div>
+                                    <div className="offers__price">£1730</div>
                                 </div>
                             </Link>
                         </div>
@@ -312,7 +285,7 @@ const Home = () => {
                         <div className="golf-pro__block">
                             <div className="golf-pro__info">
                                 <div className="golf-pro__img">
-                                    <img src={image} alt="" />
+                                    <img src={ourPro} alt="" />
                                 </div>
                                 <div className="golf-pro__data">
                                     <h3>Jhon Dou</h3>
@@ -331,7 +304,7 @@ const Home = () => {
                         <div className="golf-pro__block">
                             <div className="golf-pro__info">
                                 <div className="golf-pro__img">
-                                    <img src={image} alt="" />
+                                    <img src={ourPro} alt="" />
                                 </div>
                                 <div className="golf-pro__data">
                                     <h3>Jhon Dou</h3>
@@ -350,7 +323,7 @@ const Home = () => {
                         <div className="golf-pro__block">
                             <div className="golf-pro__info">
                                 <div className="golf-pro__img">
-                                    <img src={image} alt="" />
+                                    <img src={ourPro} alt="" />
                                 </div>
                                 <div className="golf-pro__data">
                                     <h3>Jhon Dou</h3>

@@ -3,7 +3,7 @@ import bannerImg from "../assets/banner/destinations-2.jpeg";
 import { useParams } from "react-router-dom";
 import { destinations } from "../services";
 import { Link } from "react-router-dom";
-import image1 from "../assets/image-1.jpeg";
+import offer1 from "../assets/offers/offer-1.jpeg";
 import { HiMapPin } from "react-icons/hi2";
 
 const Destination = () => {
@@ -32,7 +32,7 @@ const Destination = () => {
                         <div className="offers__block">
                             <Link to={"/offer"}>
                                 <div className="offers__img">
-                                    <img src={image1} alt="" />
+                                    <img src={offer1} alt="" />
                                 </div>
                                 <div className="offers__info">
                                     <div className="offers__data">
@@ -51,7 +51,7 @@ const Destination = () => {
                         <div className="offers__block">
                             <Link to={"/offer"}>
                                 <div className="offers__img">
-                                    <img src={image1} alt="" />
+                                    <img src={offer1} alt="" />
                                 </div>
                                 <div className="offers__info">
                                     <div className="offers__data">
@@ -70,7 +70,7 @@ const Destination = () => {
                         <div className="offers__block">
                             <Link to={"/offer"}>
                                 <div className="offers__img">
-                                    <img src={image1} alt="" />
+                                    <img src={offer1} alt="" />
                                 </div>
                                 <div className="offers__info">
                                     <div className="offers__data">
