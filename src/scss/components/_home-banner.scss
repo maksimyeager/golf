@@ -99,13 +99,16 @@
 }
 
 .learn-more-about {
-    
     position: absolute;
     right: 30px;
     bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: end;
+
+    @media (max-width: 990px) {
+        display: none;
+    }
 
     &__images {
         display: flex;
@@ -157,30 +160,19 @@
                 position: relative;
                 width: 75px;
                 height: 75px;
-                background: transparent;
+                background: #12ae65; /* Квадрат прозрачный */
                 border-radius: 0px 0px 38px 0px;
                 z-index: 2;
+            }
 
-                &::after {
-                    position: absolute;
-                    content: "";
-                    width: 75px;
-                    height: 75px;
-                    background-color: #ebeeeb;
-                    border-radius: 0px 0px 0px 0px;
-                    z-index: 2;
-                }
-
-                &::before {
-                    position: absolute;
-                    content: "";
-                    width: 75px;
-                    height: 75px;
-                    background-color: #12ae65;
-                    border-radius: 0px 0px 38px 0px;
-                    z-index: 3;
-                    border: 1px solid black;
-                }
+            .learn-more-about__rounded::before {
+                position: absolute;
+                content: "";
+                width: 75px;
+                height: 75px;
+                background-color: transparent;
+                z-index: 3;
+                border: 1px solid black;
             }
 
             .learn-more-about__title {

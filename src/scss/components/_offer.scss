@@ -91,7 +91,7 @@
             border-radius: 29px;
             overflow: hidden;
 
-            img{
+            img {
                 object-fit: cover;
                 height: 100%;
             }
@@ -130,8 +130,10 @@
 
     &__desc {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px 60px;
+        // grid-template-columns: 1fr 1fr;
+
+        // gap: 30px 60px;
+        gap: 15px;
 
         @media (max-width: 576px) {
             grid-template-columns: 1fr;

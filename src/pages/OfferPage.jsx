@@ -54,7 +54,7 @@ const OfferPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="offer-page__desc">
+                {/* <div className="offer-page__desc">
                     <div className="offer-page__desc-block">
                         <h2>About the offer</h2>
                         <p>
@@ -97,6 +97,46 @@ const OfferPage = () => {
                             sunt explicabo.
                         </p>
                     </div>
+                </div> */}
+                <div className="offer-page__desc">
+                    <p>
+                        <b>The National Golf Club of Azerbaijan</b> - Where
+                        nature and sport unite in perfection!
+                    </p>
+                    <p>
+                        Nestled in the picturesque foothills of the Caucasus
+                        Mountains, the National Azerbaijan Golf Club in Quba
+                        offers golf travelers a unique and challenging
+                        experience. As Azerbaijan's inaugural golf course, it
+                        spans 75 hectares of diverse terrain, featuring
+                        undulating fairways and strategically placed deep
+                        bunkers that test golfers of all skill levels.
+                    </p>
+                    <p>
+                        Designed by Jon Hunt of International Golf Design, this
+                        18-hole, par-72 course harmoniously integrates with the
+                        natural landscape, providing stunning mountain vistas
+                        that enhance the golfing experience. The course's design
+                        ensures that, despite its championship standards,
+                        landing zones, approaches, and greens remain accessible,
+                        offering a "look hard, play easy" feel that maximizes
+                        enjoyment for all players.{" "}
+                    </p>
+                    <p>
+                        The club's purpose-built clubhouse features luxurious
+                        locker rooms, a well-stocked professional shop catering
+                        to every golfer's needs, and a unique dining experience,
+                        all contributing to a memorable visit.
+                    </p>
+                    <p>
+                        For golf enthusiasts seeking a destination that combines
+                        natural beauty with a challenging course, the National
+                        Azerbaijan Golf Club stands out as a premier choice. Its
+                        location near the Quba Palace Hotel allows travelers to
+                        immerse themselves in the region's rich culture and
+                        traditions, making it an ideal spot for a comprehensive
+                        golf trip.
+                    </p>
                 </div>
             </div>
         </div>

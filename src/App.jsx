@@ -17,6 +17,8 @@ import ProPage from "./pages/ProPage";
 import "./scss/app.scss";
 import OfferPage from "./pages/OfferPage";
 
+import { client } from "../sanity";
+
 const App = () => {
     return (
         <>
