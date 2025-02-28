@@ -160,8 +160,7 @@
                 position: relative;
                 width: 75px;
                 height: 75px;
-                background: #12ae65; /* Квадрат прозрачный */
-                border-radius: 0px 0px 38px 0px;
+                background: #ebeeeb; /* Квадрат прозрачный */
                 z-index: 2;
             }
 
@@ -170,9 +169,10 @@
                 content: "";
                 width: 75px;
                 height: 75px;
-                background-color: transparent;
+                background-color: #626262;
+                border-radius: 0px 0px 38px 0px;
+
                 z-index: 3;
-                border: 1px solid black;
             }
 
             .learn-more-about__title {

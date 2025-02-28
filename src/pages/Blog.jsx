@@ -9,10 +9,11 @@ const Blog = () => {
     useEffect(() => {
         // Получаем данные из Sanity
         client
-            .fetch('*[_type == "blogPost"]{title, image, date, description}')
+            .fetch(
+                '*[_type == "blogPost"]{title, image, date, description, slug}'
+            )
             .then((data) => {
                 setBlogs(data);
-                console.log(blogs); // Сохраняем данные в состояние
             });
     }, []);
 
@@ -20,15 +21,13 @@ const Blog = () => {
         <div className="blog">
             <div className="container">
                 {blogs.map((blog, index) => {
-                    // Параметры для работы с изображением
                     const imageUrl = blog.image
                         ? urlFor(blog.image).url()
-                        : null; // Получаем URL изображения
+                        : null;
 
                     return (
                         <div key={index} className="blog__block">
                             <div className="blog__image">
-                                {/* Выводим изображение, если оно есть */}
                                 {imageUrl && (
                                     <img src={imageUrl} alt={blog.title} />
                                 )}
@@ -50,7 +49,10 @@ const Blog = () => {
                                         </span>
                                     </p>
 
-                                    <Link to={"/blog-page"} className="link-1">
+                                    <Link
+                                        to={`/blog-page/${blog.slug.current}`}
+                                        className="link-1"
+                                    >
                                         See More
                                     </Link>
                                 </div>

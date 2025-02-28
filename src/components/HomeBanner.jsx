@@ -3,16 +3,17 @@ import { FiArrowRight } from "react-icons/fi";
 import learnMoreAboutImg1 from "../assets/home-banner/learn-more-about-1.png";
 import learnMoreAboutImg2 from "../assets/home-banner/learn-more-about-2.png";
 import learnMoreAboutImg3 from "../assets/home-banner/learn-more-about-3.png";
+import { useTranslation } from "react-i18next";
 
 const HomeBanner = () => {
+    const { t } = useTranslation("global");
+
     return (
         <div className="home-banner">
             <div className="home-banner--overlay"></div>
             <div className="container">
                 <p className="home__subtitle">welcome to golf verve</p>
-                <h1 className="home__title">
-                    Welcome to the Ultimate Haven for Golf Enthusiasts!
-                </h1>
+                <h1 className="home__title">{t("home-banner.title")}</h1>
                 <p className="home__desc">
                     We are seasoned tourism professionals with a deep passion
                     for curating exceptional golf getaways. Our expertise lies

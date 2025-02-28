@@ -6,10 +6,11 @@
     line-height: 1.13;
     padding: 8px 20px;
     text-align: center;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
-.marks{
+.marks {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;

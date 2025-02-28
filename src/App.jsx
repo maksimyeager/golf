@@ -17,8 +17,6 @@ import ProPage from "./pages/ProPage";
 import "./scss/app.scss";
 import OfferPage from "./pages/OfferPage";
 
-import { client } from "../sanity";
-
 const App = () => {
     return (
         <>
@@ -27,7 +25,7 @@ const App = () => {
                 <Route path={"/"} element={<Layout />}>
                     <Route path={"/"} element={<Home />} />
                     <Route path={"/offers"} element={<Offers />} />
-                    <Route path={"/offer"} element={<OfferPage />} />
+                    <Route path={"/offer/:id"} element={<OfferPage />} />
                     <Route path={"/destinations"} element={<Destinations />} />
                     <Route
                         path={"/destination/:destination"}
@@ -37,7 +35,7 @@ const App = () => {
                     <Route path={"/our-pros"} element={<OurPros />} />
                     <Route path={"/pro"} element={<ProPage />} />
                     <Route path={"/blog"} element={<Blog />} />
-                    <Route path={"/blog-page"} element={<BlogPage />} />
+                    <Route path={"/blog-page/:id"} element={<BlogPage />} />
                     <Route path={"/group-tours"} element={<GroupTours />} />
                     <Route
                         path={"/customize-tours"}
