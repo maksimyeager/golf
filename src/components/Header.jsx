@@ -85,7 +85,11 @@ const Header = () => {
                                                         <FaChevronRight color="#12AE65" />
                                                         <span>Russia</span>
                                                     </Link>
-
+                                                </ul>
+                                            </div>
+                                            <div className="dropdown__block">
+                                                <div className="dropdown__block-title"></div>
+                                                <ul className="dropdown__list dropdown__list--untitled">
                                                     <Link
                                                         to={
                                                             "/destination/kazakhstan"
@@ -95,11 +99,6 @@ const Header = () => {
                                                         <FaChevronRight color="#12AE65" />
                                                         <span>Kazakhstan</span>
                                                     </Link>
-                                                </ul>
-                                            </div>
-                                            <div className="dropdown__block">
-                                                <div className="dropdown__block-title"></div>
-                                                <ul className="dropdown__list dropdown__list--untitled">
                                                     <Link
                                                         to={"/destination/uae"}
                                                         className="customize"
@@ -116,16 +115,6 @@ const Header = () => {
                                                     >
                                                         <FaChevronRight color="#12AE65" />
                                                         <span>Qatar</span>
-                                                    </Link>
-
-                                                    <Link
-                                                        to={
-                                                            "/destination/turkey"
-                                                        }
-                                                        className="customize"
-                                                    >
-                                                        <FaChevronRight color="#12AE65" />
-                                                        <span>Turkey</span>
                                                     </Link>
                                                 </ul>
                                             </div>

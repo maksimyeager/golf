@@ -27,7 +27,7 @@ const Destination = () => {
                 setDestinationOffers(data);
                 setLoading(false);
             });
-    }, []);
+    }, [destination]);
     console.log(destinationOffers);
 
     return (

@@ -40,15 +40,17 @@ export const destinations = [
     {
         name: "UAE",
         path: "uae",
-        desc: [``],
+        desc: [``, ``, ``, ``, ``],
     },
     {
         name: "Qatar",
         path: "qatar",
-        desc: [``],
-    },
-    {
-        name: "Turkey",
-        path: "turkey",
+        desc: [
+            `Qatar has rapidly emerged as a premier destination for golf enthusiasts, offering world-class facilities and challenging courses that cater to both amateurs and professionals. The country's commitment to the sport is evident in its meticulously designed 18-hole championship courses, which seamlessly blend modern amenities with the natural desert landscape.`,
+            `Golfers in Qatar can expect courses that adhere to international standards, featuring lush fairways, strategically placed bunkers, and water hazards that provide a rigorous test of skill. The incorporation of advanced technologies, such as floodlit courses, allows for play during the cooler evening hours, ensuring a comfortable experience year-round. State-of-the-art practice facilities, including driving ranges and short game areas, are readily available to help players refine their techniques.`,
+            `Beyond the technical aspects, Qatar's golf venues are designed with the player's overall experience in mind. Modern clubhouses offer a range of amenities, from pro shops stocked with the latest equipment to gourmet dining options that overlook scenic vistas. Professional coaching services are also accessible, providing personalized instruction to help golfers elevate their game.`,
+            `The country's favorable climate, combined with its strategic location in the Middle East, makes it an attractive destination for golf travelers seeking a unique blend of sport and culture. Whether you're looking to participate in a competitive tournament or enjoy a leisurely round, Qatar's golf courses offer an unparalleled experience that caters to all levels of play.`,
+            `Qatar offers the perfect blend of sport, culture, and hospitality.`,
+        ],
     },
 ];
