@@ -7,19 +7,20 @@ import { HiMapPin } from "react-icons/hi2";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import offer1 from "../assets/offers/offer-1.jpeg";
-import offer2 from "../assets/offers/offer-2.jpeg";
-import offer3 from "../assets/offers/offer-3.jpeg";
 import destination1 from "../assets/destinations/destination-1.jpg";
 import destination2 from "../assets/destinations/destination-2.jpg";
 import destination3 from "../assets/destinations/destination-3.jpg";
 import HomeBanner from "../components/HomeBanner";
+import useGetOffers from "../hooks/useGetOffers";
+import { urlFor } from "../../sanity";
 
 const Home = () => {
+    const { offers, loading} = useGetOffers();
+    console.log(offers);
     return (
         <>
             <div className="main-banner">
-                <HomeBanner/>
+                <HomeBanner />
             </div>
             <section className="section section--subscribe">
                 <div className="container">
@@ -87,63 +88,48 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="offers__wrapper">
-                        <div className="offers__block">
-                            <Link to={"/offer"}>
-                                <div className="offers__img">
-                                    <img src={offer1} alt="" />
-                                </div>
-                                <div className="offers__info">
-                                    <div className="offers__data">
-                                        <div className="offers__title">
-                                            Special Offer 1
-                                        </div>
-                                        <div className="address">
-                                            <HiMapPin size={18} />
-                                            City, Address
-                                        </div>
+                        {!loading &&
+                            offers
+                                .filter(
+                                    (item, index) =>
+                                        index === 1 ||
+                                        index === 9 ||
+                                        index == 12
+                                )
+                                .map((item, index) => (
+                                    <div className="offers__block" key={index}>
+                                        <Link
+                                            to={`/offer/${item.slug.current}`}
+                                        >
+                                            <div className="offers__img">
+                                                <img
+                                                    src={
+                                                        item.image
+                                                            ? urlFor(
+                                                                  item.image
+                                                              ).url()
+                                                            : null
+                                                    }
+                                                    alt={item.title}
+                                                />
+                                            </div>
+                                            <div className="offers__info">
+                                                <div className="offers__data">
+                                                    <div className="offers__title">
+                                                        {item.title}
+                                                    </div>
+                                                    <div className="address">
+                                                        <HiMapPin size={18} />
+                                                        {item.location}
+                                                    </div>
+                                                </div>
+                                                <div className="offers__price">
+                                                    £{item.price}
+                                                </div>
+                                            </div>
+                                        </Link>
                                     </div>
-                                    <div className="offers__price">£1849</div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="offers__block">
-                            <Link to={"/offer"}>
-                                <div className="offers__img">
-                                    <img src={offer2} alt="" />
-                                </div>
-                                <div className="offers__info">
-                                    <div className="offers__data">
-                                        <div className="offers__title">
-                                            Special Offer 2
-                                        </div>
-                                        <div className="address">
-                                            <HiMapPin size={18} />
-                                            City, Address
-                                        </div>
-                                    </div>
-                                    <div className="offers__price">£1910</div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="offers__block">
-                            <Link to={"/offer"}>
-                                <div className="offers__img">
-                                    <img src={offer3} alt="" />
-                                </div>
-                                <div className="offers__info">
-                                    <div className="offers__data">
-                                        <div className="offers__title">
-                                            Special Offer 3
-                                        </div>
-                                        <div className="address">
-                                            <HiMapPin size={18} />
-                                            City, Address
-                                        </div>
-                                    </div>
-                                    <div className="offers__price">£1730</div>
-                                </div>
-                            </Link>
-                        </div>
+                                ))}
                     </div>
                 </div>
             </section>

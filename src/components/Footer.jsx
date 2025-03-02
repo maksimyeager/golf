@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import { FiFacebook } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
+import { destinations } from "../services";
 
 const Footer = () => {
     return (
@@ -70,25 +71,16 @@ const Footer = () => {
                     <div className="footer__menu">
                         <h2 className="footer__menu-title">Top Destinations</h2>
                         <ul className="footer__list">
-                            <li className="footer__list-item">
-                                <Link to={"/destination/azerbaijan"}>
-                                    Azərbaycan
-                                </Link>
-                            </li>
-                            <li className="footer__list-item">
-                                <Link to={"/destination/georgia"}>Georgia</Link>
-                            </li>
-                            <li className="footer__list-item">
-                                <Link to={"/destination/russia"}>Russia</Link>
-                            </li>
-                            <li className="footer__list-item">
-                                <Link to={"/destination/kazakhstan"}>
-                                    Kazakhstan
-                                </Link>
-                            </li>
-                            <li className="footer__list-item">
-                                <Link to={"/destination/uae"}>UAE</Link>
-                            </li>
+                            {destinations.map((item) => (
+                                <li
+                                    className="footer__list-item"
+                                    key={item.path}
+                                >
+                                    <Link to={`/destination/${item.path}`}>
+                                        {item.name}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

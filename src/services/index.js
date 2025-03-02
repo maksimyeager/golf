@@ -1,6 +1,6 @@
 export const destinations = [
     {
-        name: "Azərbaycan",
+        name: "Azerbaijan",
         path: "azerbaijan",
         desc: [
             `Nestled at the crossroads of Europe and Asia, this captivating destination combines breathtaking landscapes, warm hospitality, and a growing reputation as a golfing haven. With its pristine courses and modern facilities, Azerbaijan provides an ideal setting for golfers seeking unique and memorable golf trips.`,

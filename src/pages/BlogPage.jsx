@@ -17,7 +17,7 @@ const BlogPage = () => {
                     title, 
                     image,
                     price,
-                    location, 
+                    date, 
                     description, 
                     secondaryImage,
                     secondaryDescription,
@@ -57,7 +57,7 @@ const BlogPage = () => {
                                 src={
                                     blog.image ? urlFor(blog.image).url() : null
                                 }
-                                alt=""
+                                alt={blog.title}
                             />
                         </div>
                         <div className="blog__page__info">

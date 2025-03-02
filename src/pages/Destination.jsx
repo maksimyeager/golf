@@ -17,7 +17,6 @@ const Destination = () => {
     );
 
     useEffect(() => {
-        // Получаем данные из Sanity
         client
             .fetch(
                 '*[_type == "destinationOffer"  && key == $destination]{title, image, location, price, slug}',

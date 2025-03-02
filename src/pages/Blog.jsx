@@ -7,7 +7,6 @@ const Blog = () => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        // Получаем данные из Sanity
         client
             .fetch(
                 '*[_type == "blogPost"]{title, image, date, description, slug}'
