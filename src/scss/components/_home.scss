@@ -85,7 +85,7 @@
                     color: #fff;
                     font-weight: 500;
                     background-color: #000;
-                    width: 90px;
+                    min-width: 90px;
                     padding: 8px 10px;
                     border-radius: 72px;
                     transition: all 0.3s ease;
@@ -245,7 +245,7 @@
 
     &--offers {
         .section__subtitle {
-            margin-bottom: 0;
+            margin: 0;
         }
         .offers {
             &__info {

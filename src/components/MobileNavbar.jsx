@@ -9,11 +9,11 @@ const MobileNavbar = ({ open, onClose }) => {
     const { t } = useTranslation("global");
 
     const mobileNavbarLinks = [
-        { name: "Destinations", path: "/destinations" },
-        { name: "Tours", path: "/tours" },
-        { name: "Offers", path: "/offers" },
-        { name: "Our Pros", path: "/our-pros" },
-        { name: "Blog", path: "/blog" },
+        { name: t("mobile-navbar.destinations"), path: "/destinations" },
+        { name: t("mobile-navbar.tours"), path: "/tours" },
+        { name: t("mobile-navbar.offers"), path: "/offers" },
+        { name: t("mobile-navbar.our-pros"), path: "/our-pros" },
+        { name: t("mobile-navbar.blog"), path: "/blog" },
     ];
 
     useEffect(() => {

@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 import Banner from "../components/Banner";
 import bannerImg from "../assets/banner/destinations.jpeg";
 import destiantion1 from "../assets/destinations/destination-1.jpg";
-
-import { destinations } from "../services";
+import { useTranslation } from "react-i18next";
+import { getDestinations } from "../services";
 
 const Destinations = () => {
+    const { t } = useTranslation("global");
+
+    const destinations = getDestinations(t);
     return (
         <>
             <Banner title={"Destinations"} imageUrl={bannerImg} />

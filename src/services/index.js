@@ -1,6 +1,7 @@
-export const destinations = [
+
+export const getDestinations = (t) => [
     {
-        name: "Azerbaijan",
+        name: t("destinations.azerbaijan"),
         path: "azerbaijan",
         desc: [
             `Nestled at the crossroads of Europe and Asia, this captivating destination combines breathtaking landscapes, warm hospitality, and a growing reputation as a golfing haven. With its pristine courses and modern facilities, Azerbaijan provides an ideal setting for golfers seeking unique and memorable golf trips.`,
@@ -9,7 +10,7 @@ export const destinations = [
         ],
     },
     {
-        name: "Georgia",
+        name: t("destinations.georgia"),
         path: "georgia",
         desc: [
             `Georgia, nestled at the crossroads of Europe and Asia, is an emerging gem for golf travelers seeking a unique blend of sport and natural beauty. The country's diverse landscapes, from the rolling vineyards of Kakheti to the mountainous terrains surrounding Tbilisi, provide stunning backdrops for golf enthusiasts.`,
@@ -19,7 +20,7 @@ export const destinations = [
         ],
     },
     {
-        name: "Russia",
+        name: t("destinations.russia"),
         path: "russia",
         desc: [
             `In recent decades, golf has taken root in Russia, evolving into a sophisticated and growing facet of the nation’s recreational landscape. As the sport continues to gain traction, Russia is steadily positioning itself as a unique destination for avid golfers, offering a diverse array of golf courses set against the country's expansive and varied terrains. From the bustling urban landscapes of Moscow and St. Petersburg to the serene expanses of its countryside, Russia’s golf courses present an intriguing combination of natural beauty and architectural precision.`,
@@ -28,7 +29,7 @@ export const destinations = [
         ],
     },
     {
-        name: "Kazakhstan",
+        name: t("destinations.kazakhstan"),
         path: "kazakhstan",
         desc: [
             `Kazakhstan is an emerging golf destination, offering world-class courses set against breathtaking landscapes. With its diverse terrain, from the majestic mountains of Almaty to the open steppes surrounding the capital, the country provides a unique golfing experience for players of all skill levels.  `,
@@ -38,12 +39,12 @@ export const destinations = [
         ],
     },
     {
-        name: "UAE",
+        name: t("destinations.uae"),
         path: "uae",
         desc: [``, ``, ``, ``, ``],
     },
     {
-        name: "Qatar",
+        name: t("destinations.qatar"),
         path: "qatar",
         desc: [
             `Qatar has rapidly emerged as a premier destination for golf enthusiasts, offering world-class facilities and challenging courses that cater to both amateurs and professionals. The country's commitment to the sport is evident in its meticulously designed 18-hole championship courses, which seamlessly blend modern amenities with the natural desert landscape.`,

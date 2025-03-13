@@ -3,9 +3,12 @@ import logo from "../assets/logo.png";
 import { FiFacebook } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
-import { destinations } from "../services";
+import { useTranslation } from "react-i18next";
+import { getDestinations } from "../services";
 
 const Footer = () => {
+    const { t } = useTranslation("global");
+    const destinations = getDestinations(t);
     return (
         <footer className="footer">
             <div className="footer__top">
@@ -14,10 +17,7 @@ const Footer = () => {
                         <div className="footer__logo">
                             <img src={logo} alt="" />
                         </div>
-                        <div className="footer__desc">
-                            A leading golf travel agency specializing in unique
-                            and emerging golf destinations around the world
-                        </div>
+                        <div className="footer__desc">{t("footer.desc")}</div>
                         <div className="footer__socials">
                             <div className="footer__social-block footer__social-block--facebook">
                                 <FiFacebook size={26} />
@@ -31,45 +31,61 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="footer__menu">
-                        <h2 className="footer__menu-title">Our Links</h2>
+                        <h2 className="footer__menu-title">
+                            {t("footer.our-links")}
+                        </h2>
                         <ul className="footer__list">
                             <li className="footer__list-item">
                                 <Link to={"/destinations"}>
-                                    Explore Destinations
+                                    {t("footer.explore-destinations")}
                                 </Link>
                             </li>
                             <li className="footer__list-item">
-                                <Link to={"/offers"}>Special Offers</Link>
+                                <Link to={"/offers"}>
+                                    {t("footer.special-offers")}
+                                </Link>
                             </li>
                             <li className="footer__list-item">
-                                <Link to={"/tournaments"}>Tournaments</Link>
+                                <Link to={"/tournaments"}>
+                                    {t("footer.tournaments")}
+                                </Link>
                             </li>
                             <li className="footer__list-item">
-                                <Link to={"/our-pros"}>Meet Our Pros</Link>
+                                <Link to={"/our-pros"}>
+                                    {t("footer.meet-our-pros")}
+                                </Link>
                             </li>
                             <li className="footer__list-item">
-                                <Link to={"/blog"}>Blog</Link>
+                                <Link to={"/blog"}>{t("footer.blog")}</Link>
                             </li>
                         </ul>
                     </div>
                     <div className="footer__menu">
-                        <h2 className="footer__menu-title">Tours</h2>
+                        <h2 className="footer__menu-title">
+                            {t("footer.tours")}
+                        </h2>
                         <ul className="footer__list">
                             <li className="footer__list-item">
-                                <Link to={"/tour"}>Golf Tours</Link>
+                                <Link to={"/tour"}>
+                                    {t("footer.golf-tours")}
+                                </Link>
                             </li>
                             <li className="footer__list-item">
                                 <Link to={"/customize-tours"}>
-                                    Customize Tours
+                                    {t("footer.customize-tours")}
                                 </Link>
                             </li>
                             <li className="footer__list-item">
-                                <Link to={"/group-tours"}>Group Tours</Link>
+                                <Link to={"/group-tours"}>
+                                    {t("footer.group-tours")}
+                                </Link>
                             </li>
                         </ul>
                     </div>
                     <div className="footer__menu">
-                        <h2 className="footer__menu-title">Top Destinations</h2>
+                        <h2 className="footer__menu-title">
+                            {t("footer.top-destinations")}
+                        </h2>
                         <ul className="footer__list">
                             {destinations.map((item) => (
                                 <li

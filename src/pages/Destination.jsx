@@ -1,15 +1,19 @@
 import Banner from "../components/Banner";
 import bannerImg from "../assets/banner/destinations-2.jpeg";
 import { useParams } from "react-router-dom";
-import { destinations } from "../services";
 import { Link } from "react-router-dom";
 import { HiMapPin } from "react-icons/hi2";
-import { client, urlFor } from "../../sanity";
 import { useState, useEffect } from "react";
+import useGetOffers from "../hooks/useGetOffers";
+import { urlFor } from "../../sanity";
+import { useTranslation } from "react-i18next";
+import { getDestinations } from "../services";
 
 const Destination = () => {
+    const { t } = useTranslation("global");
+    const destinations = getDestinations(t);
     const { destination } = useParams();
-    const [loading, setLoading] = useState(true);
+    const { offers, loading } = useGetOffers();
     const [destinationOffers, setDestinationOffers] = useState();
 
     const findDestination = destinations.find(
@@ -17,16 +21,8 @@ const Destination = () => {
     );
 
     useEffect(() => {
-        client
-            .fetch(
-                '*[_type == "destinationOffer"  && key == $destination]{title, image, location, price, slug}',
-                { destination }
-            )
-            .then((data) => {
-                setDestinationOffers(data);
-                setLoading(false);
-            });
-    }, [destination]);
+        setDestinationOffers(offers.filter((item) => item.key === destination));
+    }, [destination, offers]);
     console.log(destinationOffers);
 
     return (

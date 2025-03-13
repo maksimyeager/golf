@@ -1,9 +1,64 @@
 {
+    "see-more": "See More",
     "home-banner": {
-        "subtitle": "",
+        "subtitle": "welcome to golf verve",
         "title": "Welcome to the Ultimate Haven for Golf Enthusiasts! ",
         "desc-1": "We are seasoned tourism professionals with a deep passion for curating exceptional golf getaways. Our expertise lies in designing bespoke and distinctive golf tours to emerging and captivating destinations. By integrating unique cultural and tourism experiences into our golf packages, we enhance each journey, creating a more enriching and memorable travel experience for our clients.",
         "desc-2": "Proposed golf destinations are meticulously selected, with golf courses personally inspected and evaluated to ensure the highest quality golfing experiences.",
         "button": "Book A Tour"
+    },
+    "header": {
+        "destinations": "Destinations",
+        "tours": "Tours",
+        "offers": "Offers",
+        "our-pros": "Our Pros",
+        "blog": "Blog"
+    },
+    "mobile-navbar": {
+        "destinations": "Destinations",
+        "tours": "Tours",
+        "offers": "Offers",
+        "our-pros": "Our Pros",
+        "blog": "Blog"
+    },
+    "footer": {
+        "desc": "A leading golf travel agency specializing in unique and emerging golf destinations around the world",
+        "our-links": "Our Links",
+        "tours": "Tours",
+        "top-destinations": "Top Destinations",
+        "explore-destinations": "Explore Destinations",
+        "special-offers": "Special Offers",
+        "tournaments": "Tournaments",
+        "meet-our-pros": "Meet Our Pros",
+        "blog": "Blog",
+        "golf-tours": "Golf Tours",
+        "customize-tours": "Customize Tours",
+        "group-tours": "Group Tours"
+    },
+    "destinations": {
+        "azerbaijan": "Azerbaijan",
+        "georgia": "Georgia",
+        "russia": "Russia",
+        "kazakhstan": "Kazakhstan",
+        "uae": "UAE",
+        "qatar": "Qatar"
+    },
+    "home-page": {
+        "subscribe": "Subscribe",
+        "subscribe-desc-1": "Stay on Par with Exclusive Golf Travel Deals!",
+        "subscribe-desc-2": "Subscribe to our newsletter and get notifiedabout exclusive golf vacation packages and special promotions.",
+        "subscribe-input": "Enter Email Address",
+        "subscribe-button": "Send",
+        "subscribe-contact-us": "Contact Us",
+        "offers": "Exclusive Golf Deals",
+        "offers-desc": "Unlock exclusive golf getaways and limited-time deals designed for passionate golfers—experience world-class courses at unbeatable rates",
+        "destinations": "Ultimate Golf Destinations",
+        "destinations-desc": "Explore the latest and most exciting golf destinations, where newly discovered courses and fresh golf experiences await passionate players.",
+        "view-destination": "View Destination",
+        "view-all-destination": "View All Destinations",
+        "why": "Why Golf Verve?",
+        "why-desc": "With personalized service and local expertise, we offer seamless golf experiences tailored to your game and travel preferences",
+        "meet-our-pros": "Meet Our Pros"
+
     }
 }

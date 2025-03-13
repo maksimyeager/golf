@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import earthSvg from "../assets/icons/earth.svg";
 import travelSvg from "../assets/icons/travel.svg";
 import serviceSvg from "../assets/icons/service.svg";
-import ourPro from "../assets/our-pro.png";
 import { HiMapPin } from "react-icons/hi2";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
@@ -13,10 +12,13 @@ import destination3 from "../assets/destinations/destination-3.jpg";
 import HomeBanner from "../components/HomeBanner";
 import useGetOffers from "../hooks/useGetOffers";
 import { urlFor } from "../../sanity";
+import MeetOurPros from "../components/MeetOurPros";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
-    const { offers, loading} = useGetOffers();
-    console.log(offers);
+    const { t } = useTranslation("global");
+    const { offers, loading } = useGetOffers();
+
     return (
         <>
             <div className="main-banner">
@@ -26,24 +28,26 @@ const Home = () => {
                 <div className="container">
                     <div className="subscribe__wrapper">
                         <div className="subscribe__info">
-                            <h2 className="subscribe__title">Subscribe</h2>
+                            <h2 className="subscribe__title">
+                                {t("home-page.subscribe")}
+                            </h2>
                             <p
                                 className="subscribe__subtitle"
-                                style={{ maxWidth: "430px" }}
+                                style={{ maxWidth: "560px" }}
                             >
-                                Stay on Par with Exclusive Golf Travel Deals!
+                                {t("home-page.subscribe-desc-1")}
                                 <br />
-                                Subscribe to our newsletter and get notified
-                                about exclusive golf vacation packages and
-                                special promotions.
+                                {t("home-page.subscribe-desc-2")}
                             </p>
                             <form action="" className="subscribe__form">
                                 <input
                                     type="text"
-                                    placeholder="Enter Email Address"
+                                    placeholder={t("home-page.subscribe-input")}
                                     required
                                 />
-                                <button>Send</button>
+                                <button>
+                                    {t("home-page.subscribe-button")}
+                                </button>
                             </form>
                         </div>
                         <div className="subscribe__contacts">
@@ -55,7 +59,7 @@ const Home = () => {
                                     info@golf-verve.com
                                 </div>
                                 <div className="subscribe__contacts-desc">
-                                    Contact us
+                                    {t("home-page.subscribe-contact-us")}
                                 </div>
                             </div>
                             <div className="subscribe__contacts-img">
@@ -70,20 +74,18 @@ const Home = () => {
                     <div className="offers__head">
                         <div className="offers__head-col">
                             <h2 className="section__title">
-                                Exclusive Golf Deals
+                                {t("home-page.offers")}
                             </h2>
                             <p
                                 className="section__subtitle"
                                 style={{ maxWidth: "530px" }}
                             >
-                                Unlock exclusive golf getaways and limited-time
-                                deals designed for passionate golfers—experience
-                                world-class courses at unbeatable rates
+                                {t("home-page.offers-desc")}
                             </p>
                         </div>
                         <div className="offers__head-col">
                             <Link to={"/"} className="link-1">
-                                See More
+                                {t("see-more")}
                             </Link>
                         </div>
                     </div>
@@ -136,15 +138,13 @@ const Home = () => {
             <section className="section section--destinations">
                 <div className="container">
                     <h2 className="section__title">
-                        Ultimate Golf Destinations
+                        {t("home-page.destinations")}
                     </h2>
                     <p
                         className="section__subtitle"
                         style={{ maxWidth: "580px" }}
                     >
-                        Explore the latest and most exciting golf destinations,
-                        where newly discovered courses and fresh golf
-                        experiences await passionate players.
+                        {t("home-page.destinations-desc")}
                     </p>
                     <div className="destinations__wrapper">
                         <Link to={"/destination/azerbaijan"}>
@@ -160,7 +160,7 @@ const Home = () => {
                                     to={"/destination/azerbaijan"}
                                     className="destinations__link"
                                 >
-                                    View Destination
+                                    {t("home-page.view-destination")}
                                 </Link>
                             </div>
                         </Link>
@@ -177,7 +177,7 @@ const Home = () => {
                                     to={"/destination/georgia"}
                                     className="destinations__link"
                                 >
-                                    View Destination
+                                    {t("home-page.view-destination")}
                                 </Link>
                             </div>
                         </Link>
@@ -194,7 +194,7 @@ const Home = () => {
                                     to={"/destination/russia"}
                                     className="destinations__link"
                                 >
-                                    View Destination
+                                    {t("home-page.view-destination")}
                                 </Link>
                             </div>
                         </Link>
@@ -203,7 +203,9 @@ const Home = () => {
                         <button>
                             <FaChevronLeft color={"#fff"} size={20} />
                         </button>
-                        <Link to={"/destinations"}>View All Destinations</Link>
+                        <Link to={"/destinations"}>
+                            {t("home-page.view-all-destination")}
+                        </Link>
                         <button>
                             <FaChevronRight color={"#fff"} size={20} />
                         </button>
@@ -212,11 +214,12 @@ const Home = () => {
             </section>
             <section className="section section--why">
                 <div className="container">
-                    <h2 className="section__title">Why Golf Verve?</h2>
-                    <p className="section__subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod <br /> tempor incididunt ut labore et
-                        dolore magna aliqua.
+                    <h2 className="section__title">{t("home-page.why")}</h2>
+                    <p
+                        className="section__subtitle"
+                        style={{ maxWidth: "580px" }}
+                    >
+                        {t("home-page.why-desc")}
                     </p>
                     <div className="why-golf__wrapper">
                         <div className="why-golf__block">
@@ -260,77 +263,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="section section--pro">
-                <div className="container">
-                    <h2 className="section__title">Meet Our Pro’s</h2>
-                    <p className="section__subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed <br /> do eiusmod tempor incididunt.
-                    </p>
-                    <div className="golf-pro__wrapper">
-                        <div className="golf-pro__block">
-                            <div className="golf-pro__info">
-                                <div className="golf-pro__img">
-                                    <img src={ourPro} alt="" />
-                                </div>
-                                <div className="golf-pro__data">
-                                    <h3>Jhon Dou</h3>
-                                    <p>PGA Professional</p>
-                                </div>
-                            </div>
-                            <p className="golf-pro__desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
-                            </p>
-                        </div>
-                        <div className="golf-pro__block">
-                            <div className="golf-pro__info">
-                                <div className="golf-pro__img">
-                                    <img src={ourPro} alt="" />
-                                </div>
-                                <div className="golf-pro__data">
-                                    <h3>Jhon Dou</h3>
-                                    <p>PGA Professional</p>
-                                </div>
-                            </div>
-                            <p className="golf-pro__desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
-                            </p>
-                        </div>
-                        <div className="golf-pro__block">
-                            <div className="golf-pro__info">
-                                <div className="golf-pro__img">
-                                    <img src={ourPro} alt="" />
-                                </div>
-                                <div className="golf-pro__data">
-                                    <h3>Jhon Dou</h3>
-                                    <p>PGA Professional</p>
-                                </div>
-                            </div>
-                            <p className="golf-pro__desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
-                            </p>
-                        </div>
-                    </div>
-                    <Link to={"/"} className="link-1">
-                        See More{" "}
-                    </Link>
-                </div>
-            </section>
+            <MeetOurPros />
         </>
     );
 };

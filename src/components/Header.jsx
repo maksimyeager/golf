@@ -7,8 +7,10 @@ import { useState } from "react";
 import golfBall from "../assets/golf-ball.png";
 import { Menu } from "lucide-react";
 import MobileNavbar from "./MobileNavbar";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+    const { t } = useTranslation("global");
     const [open, setOpen] = useState(false);
     const [openDeopdown, setOpenDeopdown] = useState(false);
     const [openDeopdown1, setOpenDeopdown1] = useState(false);
@@ -35,7 +37,7 @@ const Header = () => {
                                     to={"/destinations"}
                                     className="toggle-link"
                                 >
-                                    Destinations{" "}
+                                    {t("header.destinations")}{" "}
                                     <FaChevronDown
                                         size={14}
                                         className={
@@ -53,7 +55,7 @@ const Header = () => {
                                         <div className="dropdown__wrapper">
                                             <div className="dropdown__block">
                                                 <div className="dropdown__block-title">
-                                                    Destinations
+                                                    {t("header.destinations")}
                                                 </div>
                                                 <ul className="dropdown__list">
                                                     <Link
@@ -63,7 +65,7 @@ const Header = () => {
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>Azerbaijan</span>
+                                                        <span>{t("destinations.azerbaijan")}</span>
                                                     </Link>
 
                                                     <Link
@@ -73,7 +75,7 @@ const Header = () => {
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>Georgia</span>
+                                                        <span>{t("destinations.georgia")}</span>
                                                     </Link>
 
                                                     <Link
@@ -83,7 +85,7 @@ const Header = () => {
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>Russia</span>
+                                                        <span>{t("destinations.russia")}</span>
                                                     </Link>
                                                 </ul>
                                             </div>
@@ -97,14 +99,14 @@ const Header = () => {
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>Kazakhstan</span>
+                                                        <span>{t("destinations.kazakhstan")}</span>
                                                     </Link>
                                                     <Link
                                                         to={"/destination/uae"}
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>UAE</span>
+                                                        <span>{t("destinations.uae")}</span>
                                                     </Link>
 
                                                     <Link
@@ -114,7 +116,7 @@ const Header = () => {
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>Qatar</span>
+                                                        <span>{t("destinations.qatar")}</span>
                                                     </Link>
                                                 </ul>
                                             </div>
@@ -127,7 +129,7 @@ const Header = () => {
                                 onMouseLeave={() => setOpenDeopdown1(false)}
                             >
                                 <Link to={"#"} className="toggle-link">
-                                    Tours{" "}
+                                {t("header.tours")}{" "}
                                     <FaChevronDown
                                         size={14}
                                         className={
@@ -278,13 +280,13 @@ const Header = () => {
                             </li>
 
                             <li>
-                                <Link to={"/offers"}>Offers</Link>
+                                <Link to={"/offers"}>{t("header.offers")}</Link>
                             </li>
                             <li>
-                                <Link to={"/our-pros"}>Our Pros </Link>
+                                <Link to={"/our-pros"}>{t("header.our-pros")}</Link>
                             </li>
                             <li>
-                                <Link to={"/blog"}>Blog</Link>
+                                <Link to={"/blog"}>{t("header.blog")}</Link>
                             </li>
                         </ul>
                     </div>

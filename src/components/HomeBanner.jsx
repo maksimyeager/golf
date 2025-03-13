@@ -12,24 +12,12 @@ const HomeBanner = () => {
         <div className="home-banner">
             <div className="home-banner--overlay"></div>
             <div className="container">
-                <p className="home__subtitle">welcome to golf verve</p>
+                <p className="home__subtitle">{t("home-banner.subtitle")}</p>
                 <h1 className="home__title">{t("home-banner.title")}</h1>
-                <p className="home__desc">
-                    We are seasoned tourism professionals with a deep passion
-                    for curating exceptional golf getaways. Our expertise lies
-                    in designing bespoke and distinctive golf tours to emerging
-                    and captivating destinations. By integrating unique cultural
-                    and tourism experiences into our golf packages, we enhance
-                    each journey, creating a more enriching and memorable travel
-                    experience for our clients.
-                </p>
-                <p className="home__desc">
-                    Proposed golf destinations are meticulously selected, with
-                    golf courses personally inspected and evaluated to ensure
-                    the highest quality golfing experiences.
-                </p>
+                <p className="home__desc">{t("home-banner.desc-1")}</p>
+                <p className="home__desc">{t("home-banner.desc-2")}</p>
                 <div className="home__settings">
-                    <Link to={"/"}>Book A Tour</Link>
+                    <Link to={"/"}>{t("home-banner.button")}</Link>
                 </div>
                 <div className="learn-more-about">
                     <div className="learn-more-about__block learn-more-about__block--1">
@@ -60,9 +48,7 @@ const HomeBanner = () => {
                         </div>
                         <div className="learn-more-about__desc">
                             <h3>Best Of Our Offers</h3>
-                            <p>
-                                Lorem Ipsum is simply <br /> dummy text of the.
-                            </p>
+                            <p>Discover our exclusive selections</p>
                         </div>
                     </div>
                 </div>
