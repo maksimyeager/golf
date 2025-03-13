@@ -4,8 +4,11 @@ import pro from "../assets/pro.jpeg";
 import { Link } from "react-router-dom";
 import { client, urlFor } from "../../sanity";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const OurPros = () => {
+    const { t } = useTranslation("global");
+
     const [ourPros, setOurPros] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -22,7 +25,7 @@ const OurPros = () => {
 
     return (
         <>
-            <Banner title={"Our Pros"} imageUrl={bannerImg} />
+            <Banner title={t("header.our-pros")} imageUrl={bannerImg} />
             <div className="our-pros">
                 {!loading && (
                     <div className="container">

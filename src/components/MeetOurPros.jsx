@@ -18,7 +18,7 @@ const MeetOurPros = () => {
     return (
         <section className="section section--pro">
             <div className="container">
-                <h2 className="section__title">Meet Our Pro’s</h2>
+                <h2 className="section__title">{t("home-page.meet-our-pros")}</h2>
                 <p className="section__subtitle" style={{ maxWidth: "500px" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt.

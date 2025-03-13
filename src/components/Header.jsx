@@ -65,7 +65,11 @@ const Header = () => {
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>{t("destinations.azerbaijan")}</span>
+                                                        <span>
+                                                            {t(
+                                                                "destinations.azerbaijan"
+                                                            )}
+                                                        </span>
                                                     </Link>
 
                                                     <Link
@@ -75,7 +79,11 @@ const Header = () => {
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>{t("destinations.georgia")}</span>
+                                                        <span>
+                                                            {t(
+                                                                "destinations.georgia"
+                                                            )}
+                                                        </span>
                                                     </Link>
 
                                                     <Link
@@ -85,7 +93,11 @@ const Header = () => {
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>{t("destinations.russia")}</span>
+                                                        <span>
+                                                            {t(
+                                                                "destinations.russia"
+                                                            )}
+                                                        </span>
                                                     </Link>
                                                 </ul>
                                             </div>
@@ -99,14 +111,22 @@ const Header = () => {
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>{t("destinations.kazakhstan")}</span>
+                                                        <span>
+                                                            {t(
+                                                                "destinations.kazakhstan"
+                                                            )}
+                                                        </span>
                                                     </Link>
                                                     <Link
                                                         to={"/destination/uae"}
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>{t("destinations.uae")}</span>
+                                                        <span>
+                                                            {t(
+                                                                "destinations.uae"
+                                                            )}
+                                                        </span>
                                                     </Link>
 
                                                     <Link
@@ -116,7 +136,11 @@ const Header = () => {
                                                         className="customize"
                                                     >
                                                         <FaChevronRight color="#12AE65" />
-                                                        <span>{t("destinations.qatar")}</span>
+                                                        <span>
+                                                            {t(
+                                                                "destinations.qatar"
+                                                            )}
+                                                        </span>
                                                     </Link>
                                                 </ul>
                                             </div>
@@ -129,7 +153,7 @@ const Header = () => {
                                 onMouseLeave={() => setOpenDeopdown1(false)}
                             >
                                 <Link to={"#"} className="toggle-link">
-                                {t("header.tours")}{" "}
+                                    {t("header.tours")}{" "}
                                     <FaChevronDown
                                         size={14}
                                         className={
@@ -148,77 +172,102 @@ const Header = () => {
                                         <div className="dropdown__wrapper">
                                             <div className="dropdown__block">
                                                 <div className="dropdown__block-title">
-                                                    Tour Types
+                                                    {t(
+                                                        "tours-dropdown.tour-types"
+                                                    )}
                                                 </div>
                                                 <ul className="dropdown__list">
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            Golf & Beach Tours
+                                                            {t(
+                                                                "tours-dropdown.golf-beach-tours"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            Golf & Cultural
-                                                            Tours
+                                                            {t(
+                                                                "tours-dropdown.golf-cultural-tours"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            Golf & Gourmet Tours
+                                                            {t(
+                                                                "tours-dropdown.golf-gourmet-tours"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            Golf Lakes &
-                                                            Mountain Tours
+                                                            {t(
+                                                                "tours-dropdown.golf-lakes-mountain-tours"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            Golf & Safari Tours
+                                                            {t(
+                                                                "tours-dropdown.golf-safari-tours"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            Golf & Tuition
-                                                            Breaks
+                                                            {t(
+                                                                "tours-dropdown.golf-tuition-breaks"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div className="dropdown__block">
                                                 <div className="dropdown__block-title">
-                                                    Tours by Month
+                                                    {t(
+                                                        "tours-dropdown.tours-by-month"
+                                                    )}
                                                 </div>
                                                 <ul className="dropdown__list">
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            January
+                                                            {t(
+                                                                "tours-dropdown.january"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            February
+                                                            {t(
+                                                                "tours-dropdown.february"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            March
+                                                            {t(
+                                                                "tours-dropdown.march"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            April
+                                                            {t(
+                                                                "tours-dropdown.april"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            May
+                                                            {t(
+                                                                "tours-dropdown.may"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            June
+                                                            {t(
+                                                                "tours-dropdown.june"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                 </ul>
@@ -228,32 +277,44 @@ const Header = () => {
                                                 <ul className="dropdown__list dropdown__list--untitled">
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            July
+                                                            {t(
+                                                                "tours-dropdown.july"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            August
+                                                            {t(
+                                                                "tours-dropdown.august"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            September
+                                                            {t(
+                                                                "tours-dropdown.september"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            October
+                                                            {t(
+                                                                "tours-dropdown.october"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            November
+                                                            {t(
+                                                                "tours-dropdown.november"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to={"/tour"}>
-                                                            December
+                                                            {t(
+                                                                "tours-dropdown.december"
+                                                            )}
                                                         </Link>
                                                     </li>
                                                 </ul>
@@ -264,14 +325,22 @@ const Header = () => {
                                                     className="customize"
                                                 >
                                                     <FaChevronRight color="#12AE65" />
-                                                    <span>Customize Tours</span>
+                                                    <span>
+                                                        {t(
+                                                            "tours-dropdown.customize-tours"
+                                                        )}
+                                                    </span>
                                                 </Link>
                                                 <Link
                                                     to={"/group-tours"}
                                                     className="customize"
                                                 >
                                                     <FaChevronRight color="#12AE65" />
-                                                    <span>Group Tours</span>
+                                                    <span>
+                                                        {t(
+                                                            "tours-dropdown.group-tours"
+                                                        )}
+                                                    </span>
                                                 </Link>
                                             </div>
                                         </div>
@@ -283,7 +352,9 @@ const Header = () => {
                                 <Link to={"/offers"}>{t("header.offers")}</Link>
                             </li>
                             <li>
-                                <Link to={"/our-pros"}>{t("header.our-pros")}</Link>
+                                <Link to={"/our-pros"}>
+                                    {t("header.our-pros")}
+                                </Link>
                             </li>
                             <li>
                                 <Link to={"/blog"}>{t("header.blog")}</Link>

@@ -23,7 +23,9 @@ const Footer = () => {
                                 <FiFacebook size={26} />
                             </div>
                             <div className="footer__social-block footer__social-block--instagram">
-                                <FiInstagram size={24} />
+                                <a href="https://www.instagram.com/golf.verve">
+                                    <FiInstagram size={24} />
+                                </a>
                             </div>
                             <div className="footer__social-block footer__social-block--x">
                                 <FaLinkedinIn size={22} />

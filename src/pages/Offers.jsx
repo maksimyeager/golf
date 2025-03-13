@@ -4,13 +4,15 @@ import { HiMapPin } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import useGetOffers from "../hooks/useGetOffers";
 import { urlFor } from "../../sanity";
+import { useTranslation } from "react-i18next";
 
 const Offers = () => {
+    const { t } = useTranslation("global");
     const { offers, loading } = useGetOffers();
 
     return (
         <>
-            <Banner title={"Offers"} imageUrl={bannerImg} />
+            <Banner title={t("header.offers")} imageUrl={bannerImg} />
             <section className="section">
                 <div className="container">
                     <div className="offers__wrapper">

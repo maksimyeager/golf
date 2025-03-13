@@ -154,7 +154,7 @@ const Home = () => {
                                     <div className="destinations__img--overlay"></div>
                                 </div>
                                 <div className="destinations__title">
-                                    Azərbaycan
+                                    {t("destinations.azerbaijan")}
                                 </div>
                                 <Link
                                     to={"/destination/azerbaijan"}
@@ -171,7 +171,7 @@ const Home = () => {
                                     <div className="destinations__img--overlay"></div>
                                 </div>
                                 <div className="destinations__title">
-                                    Georgia
+                                    {t("destinations.georgia")}
                                 </div>
                                 <Link
                                     to={"/destination/georgia"}
@@ -188,7 +188,7 @@ const Home = () => {
                                     <div className="destinations__img--overlay"></div>
                                 </div>
                                 <div className="destinations__title">
-                                    Russia
+                                    {t("destinations.russia")}
                                 </div>
                                 <Link
                                     to={"/destination/russia"}
