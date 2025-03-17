@@ -10,14 +10,15 @@ import MobileNavbar from "./MobileNavbar";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
-    const { t } = useTranslation("global");
+    const { t, i18n } = useTranslation("global");
     const [open, setOpen] = useState(false);
-    const [openDeopdown, setOpenDeopdown] = useState(false);
-    const [openDeopdown1, setOpenDeopdown1] = useState(false);
+    const [openDropdown, setOpenDropdown] = useState(false);
+    const [openDropdown1, setOpenDropdown1] = useState(false);
     const handleClose = () => {
         setOpen(false);
         document.body.classList.add("no-scroll");
     };
+
     return (
         <>
             <header className="header">
@@ -30,8 +31,8 @@ const Header = () => {
                     <div className="header__menu">
                         <ul className="header__list">
                             <li
-                                onMouseEnter={() => setOpenDeopdown(true)}
-                                onMouseLeave={() => setOpenDeopdown(false)}
+                                onMouseEnter={() => setOpenDropdown(true)}
+                                onMouseLeave={() => setOpenDropdown(false)}
                             >
                                 <Link
                                     to={"/destinations"}
@@ -41,11 +42,11 @@ const Header = () => {
                                     <FaChevronDown
                                         size={14}
                                         className={
-                                            openDeopdown && "toggle-active"
+                                            openDropdown && "toggle-active"
                                         }
                                     />
                                 </Link>
-                                {openDeopdown && (
+                                {openDropdown && (
                                     <div className="dropdown dropdown--1">
                                         <img
                                             src={golfBall}
@@ -149,19 +150,19 @@ const Header = () => {
                                 )}
                             </li>
                             <li
-                                onMouseEnter={() => setOpenDeopdown1(true)}
-                                onMouseLeave={() => setOpenDeopdown1(false)}
+                                onMouseEnter={() => setOpenDropdown1(true)}
+                                onMouseLeave={() => setOpenDropdown1(false)}
                             >
                                 <Link to={"#"} className="toggle-link">
                                     {t("header.tours")}{" "}
                                     <FaChevronDown
                                         size={14}
                                         className={
-                                            openDeopdown1 && "toggle-active"
+                                            openDropdown1 && "toggle-active"
                                         }
                                     />
                                 </Link>
-                                {openDeopdown1 && (
+                                {openDropdown1 && (
                                     <div className="dropdown dropdown--2">
                                         <img
                                             src={golfBall}

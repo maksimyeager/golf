@@ -9,14 +9,12 @@ import { useParams } from "react-router-dom";
 const OfferPage = () => {
     const { id } = useParams();
     const [loading, setLoading] = useState(true);
-
     const [offer, setOffer] = useState([]);
 
     useEffect(() => {
-        // Получаем данные из Sanity
         client
             .fetch(
-                '*[_type == "destinationOffer"  && slug.current == $id][0]{title, image, location, price, description, slug}',
+                '*[_type == "destinationOffer"  && slug.current == $id][0]{title, titleTrans, image, location, price, description, slug}',
                 { id }
             )
             .then((data) => {
@@ -24,7 +22,6 @@ const OfferPage = () => {
                 setLoading(false);
             });
     }, []);
-    console.log(offer);
 
     return (
         <div className="offer-page">

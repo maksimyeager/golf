@@ -10,20 +10,23 @@ import { useTranslation } from "react-i18next";
 import { getDestinations } from "../services";
 
 const Destination = () => {
-    const { t } = useTranslation("global");
-    const destinations = getDestinations(t);
+    const { t, i18n } = useTranslation("global");
+    const lang = i18n.language;
     const { destination } = useParams();
+    const destinations = getDestinations(t);
     const { offers, loading } = useGetOffers();
-    const [destinationOffers, setDestinationOffers] = useState();
+    const [destinationOffers, setDestinationOffers] = useState([]);
 
     const findDestination = destinations.find(
         (item) => item.path === destination
     );
 
     useEffect(() => {
-        setDestinationOffers(offers.filter((item) => item.key === destination));
+        const filteredOffers = offers.filter(
+            (item) => item.key === destination
+        );
+        setDestinationOffers(filteredOffers);
     }, [destination, offers]);
-    console.log(destinationOffers);
 
     return (
         <>
@@ -62,7 +65,11 @@ const Destination = () => {
                                                 </div>
                                                 <div className="address">
                                                     <HiMapPin size={18} />
-                                                    {item.location}
+                                                    {item.locationTrans
+                                                        ? item.locationTrans[
+                                                              lang
+                                                          ]
+                                                        : item.location}
                                                 </div>
                                             </div>
                                             <div className="offers__price">

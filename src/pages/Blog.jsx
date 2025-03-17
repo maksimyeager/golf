@@ -19,7 +19,7 @@ const Blog = () => {
                 setBlogs(data);
                 setLoading(false);
             });
-    }, [blogs]);
+    }, []);
 
     return (
         <div className="blog">

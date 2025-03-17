@@ -11,7 +11,7 @@ const Destinations = () => {
     const destinations = getDestinations(t);
     return (
         <>
-            <Banner title={"Destinations"} imageUrl={bannerImg} />
+            <Banner title={t("header.destinations")} imageUrl={bannerImg} />
             <section className="section section--destinations">
                 <div className="container">
                     <div className="destinations__wrapper">

@@ -50,5 +50,15 @@ export default {
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'locationTrans',
+      title: 'Местоположение с переводом',
+      type: 'object',
+      fields: [
+        {name: 'en', type: 'string', title: 'Location (English)'},
+        {name: 'ru', type: 'string', title: 'Местоположение (Русский)'},
+      ],
+      validation: (Rule) => Rule.required(),
+    },
   ],
 }

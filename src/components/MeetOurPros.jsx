@@ -13,7 +13,7 @@ const MeetOurPros = () => {
             setItems(data);
             setLoading(false);
         });
-    }, [items]);
+    }, []);
 
     return (
         <section className="section section--pro">

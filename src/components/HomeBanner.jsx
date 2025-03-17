@@ -15,7 +15,7 @@ const HomeBanner = () => {
                 <p className="home__subtitle">{t("home-banner.subtitle")}</p>
                 <h1 className="home__title">{t("home-banner.title")}</h1>
                 <p className="home__desc">{t("home-banner.desc-1")}</p>
-                <p className="home__desc">{t("home-banner.desc-2")}</p>
+                {/* <p className="home__desc">{t("home-banner.desc-2")}</p> */}
                 <div className="home__settings">
                     <Link to={"/"}>{t("home-banner.button")}</Link>
                 </div>
